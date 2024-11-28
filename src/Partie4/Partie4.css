@@ -1,0 +1,119 @@
+/* Container principale */
+.it-solution-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: #f9f9f9;
+  }
+  .subheading {
+    color: #ffae00 !important;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Texte */
+  .it-solution-content {
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  .it-solution-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .it-solution-content .highlight {
+    color: #ffae00;
+  }
+  
+  .it-solution-content p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .it-solution-features {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .it-solution-features li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .discover-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ffae00 !important;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .discover-btn:hover {
+    background-color: #ffae00;
+  }
+  
+  /* Section Images */
+  .it-solution-images {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .image-main {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .image-inner {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-side {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Images spécifiques */
+  .image-1 {
+    background-image: url("C:\Users\Dell\Pictures\plombe.png");
+    width: 250px;
+    height:250px;
+  }
+  
+  .image-2 {
+    background-image: url("C:\Users\Dell\Pictures\comp9.png");
+    width: 250px;
+    height:250px;
+    
+  }
+  
+  .image-3 {
+    background-image: url("C:\Users\Dell\Pictures\techn.png");
+    width:500px
+  }
+  

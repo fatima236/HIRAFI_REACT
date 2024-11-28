@@ -1,0 +1,95 @@
+/* App.css */
+
+.app {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    background-image: url('C:\Users\Dell\Pictures\techn.png') !important;
+    background-size: cover  !important;
+    background-position: center center !important;
+    
+    color: #fff !important;
+    height: 100vh !important;
+    padding: 20px !important; 
+    font-family: 'Arial', sans-serif !important;
+  }
+  
+  .title {
+    font-size: 2rem !important;
+    color: whitesmoke !important;
+    margin-bottom: 20px !important;
+    text-shadow: 1px 1px 6px rgba(206, 228, 8, 0.786) !important;
+  }
+  
+  .grid {
+    padding-top: 25px !important;
+    padding-left: 20px !important;
+    padding-right:60px  !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 80px !important;
+    width: 100% !important;
+    max-width: 1000px !important;
+    grid-auto-flow: dense !important;
+  }
+  
+  .card {
+     width: 100% !important;
+     
+
+     
+    background-color: gray !important;
+    border: 2px solid rgba(8, 63, 228, 0.786) !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    text-align: center !important;
+    transition: transform 0.3s ease, background-color 0.3s ease !important;
+    cursor: pointer !important;
+    color: #fff !important;
+    text-shadow: 1px 1px 6px rgba(221, 255, 0, 0.6) !important;
+    position: relative !important;
+  }
+  
+  .card.active {
+    background-color:#333 !important;
+    color: whitesmoke !important;
+  }
+  
+  .card:hover {
+    transform: scale(1.05) !important;
+    background-color: #333 !important;
+  }
+  
+  .card .icon {
+      display: flex !important; 
+      
+    font-size: 30px !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+    color:#ffae00 !important; 
+  }
+  
+  .label {
+    
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .details {
+    margin-top: 15px !important;
+    text-align: left !important;
+    font-size: 0.9rem !important;
+    color: #fff !important;
+  }
+  
+  .detail-item {
+    margin: 5px 0 !important ;
+    font-weight: normal !important;
+  }
+  .centered {
+    display: flex !important;
+    width:55% !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    margin-top: 20px !important
+  }

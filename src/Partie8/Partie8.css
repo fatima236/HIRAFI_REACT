@@ -1,0 +1,105 @@
+/* Conteneur principal */
+.contact-form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* En-tête */
+  .contact-header h5 {
+    color: #ffae00;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .contact-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-header p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  /* Formulaire */
+  .contact-form {
+    width: 100%;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    position: relative;
+    flex: 1;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 80%;
+    padding: 1rem 1rem 1rem 3.2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: none;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color:#ffae00;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+    outline: none;
+  }
+  
+  /* Icônes */
+  .icon {
+   font-size: 28px !important;
+  display: flex !important; 
+  align-items: center !important;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffae00;
+    
+  }
+  
+  /* Bouton d'envoi */
+  .submit-btn {
+    width: 30%;
+    padding: 1rem;
+    background-color: #ffae00;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #ffae00;
+  }

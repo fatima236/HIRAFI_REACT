@@ -1,0 +1,60 @@
+/* Partie1.css */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2a36; /* Couleur sombre */
+    color: #ffffff;
+    padding: 10px 30px; /* Augmenter le padding */
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+}
+
+.info-section {
+    display: flex;
+    gap: 25px; /* Espacement plus large entre les éléments */
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement plus large entre l'icône et le texte */
+}
+
+.info-item i {
+    color: #f39c12; /* Couleur dorée pour les icônes */
+    font-size: 16px; /* Taille d'icône plus grande */
+}
+
+.social-section {
+    display: flex;
+    gap: 15px; /* Espacement plus large entre les icônes sociales */
+}
+
+.social-icon {
+    color: #ffffff;
+    font-size: 18px; /* Taille des icônes sociales */
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #f39c12; /* Couleur dorée lors du survol */
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-section {
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+}

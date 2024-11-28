@@ -3,7 +3,6 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 
 const SpeechAssistant = () => {
   const [question, setQuestion] = useState('');
-  const [responses, setResponses] = useState([]);
   const { transcript, resetTranscript, listening } = useSpeechRecognition();
 
   useEffect(() => {
@@ -14,58 +13,52 @@ const SpeechAssistant = () => {
 
   // Fonction pour démarrer la conversation
   const startConversation = async () => {
-    const response = await fetch('http://localhost:5000/start'); // Assurez-vous que le port est correct
-    const data = await response.json();
-    setQuestion(data.question);
+    try {
+      const response = await fetch('http://localhost:5000/start'); // Assurez-vous que le port est correct
+      const data = await response.json();
+      setQuestion(data.question);
 
-    // Lancer la lecture vocale du texte de la question
-    speakText(data.question);
+      // Lancer la lecture vocale du texte de la question
+      speakText(data.question);
+    } catch (error) {
+      console.error("Erreur lors de l'appel à l'API:", error);
+    }
   };
 
   // Fonction pour gérer la réponse de l'utilisateur
   const handleResponse = async (userResponse) => {
-    const response = await fetch('http://localhost:5000/respond', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ response: userResponse }),
-    });
-    const data = await response.json();
-  
-    if (data.question) {
-      setQuestion(data.question);
-      speakText(data.question);  // Read the next question aloud
-    } else if (data.message) {
-      alert(data.message);
-      setQuestion('');
+    if (userResponse.trim() === '') {
+      speakText("Je n'ai pas entendu de réponse. Pouvez-vous répéter ?");
+      return; // Ne pas envoyer une réponse vide
     }
-  
-    // Example of validation and spelling prompt
-    const expectedAnswer = 'example'; // Replace with your expected answer logic
-    if (userResponse.toLowerCase() !== expectedAnswer.toLowerCase()) {
-      speakText("Désolé, je n'ai pas bien compris. Pouvez-vous épeler cela lettre par lettre?");
-      askToSpell(expectedAnswer); // Ask the user to spell out the expected answer
+
+    try {
+      const response = await fetch('http://localhost:5000/respond', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ response: userResponse }),
+      });
+      const data = await response.json();
+
+      if (data.question) {
+        setQuestion(data.question);
+        speakText(data.question);  // Lire la prochaine question à voix haute
+      } else if (data.message) {
+        alert(data.message);
+        setQuestion('');
+      }
+    } catch (error) {
+      console.error("Erreur lors de l'appel à l'API de réponse:", error);
     }
   };
-  
+
   // Fonction pour lire un texte à haute voix
   const speakText = (text) => {
     const speech = new SpeechSynthesisUtterance(text);
     speech.lang = 'fr-FR';  // Langue française
     window.speechSynthesis.speak(speech);
   };
-  const askToSpell = (word) => {
-    const letters = word.split('');
-    let i = 0;
-    const interval = setInterval(() => {
-      if (i < letters.length) {
-        speakText(`Dites la lettre ${letters[i].toUpperCase()}`);
-        i++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 1000);
-  };
-  
+
   const startListening = () => {
     SpeechRecognition.startListening({ continuous: true, language: 'fr-FR' });
   };
@@ -89,13 +82,10 @@ const SpeechAssistant = () => {
         <h2>Réponse:</h2>
         <p>{transcript}</p> {/* Afficher la réponse textuelle */}
       </div>
-      <ul>
-        {responses.map((response, index) => (
-          <li key={index}>{response}</li>
-        ))}
-      </ul>
     </div>
   );
 };
 
 export default SpeechAssistant;
+
+

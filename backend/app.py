@@ -1,67 +1,71 @@
-from flask import Flask, jsonify, request
-from flask_cors import CORS
-import pyttsx3
-import threading
+import pandas as pd
+from gtts import gTTS
+import os
+import time
 
-app = Flask(__name__)
-CORS(app)
+# Charger le dataset complet
+csv_path = "Artisans_Marocains_Dataset_avec_Emails.csv"
+data = pd.read_csv(csv_path)
 
-# Questions à poser à l'utilisateur
-questions = [
-    "Bienvenue sur Hirafi ! Voulez-vous vous inscrire ? Dites Oui ou Non.",
-    "Quel est votre nom ?",
-    "Quel est votre email ?",
-    "Quel est votre numéro de téléphone ?"
-]
+# Créer un dossier pour stocker les fichiers audio
+output_folder = "audios"
+os.makedirs(output_folder, exist_ok=True)
 
-# Initialisation du moteur de synthèse vocale
-engine = pyttsx3.init()
-engine.setProperty('rate', 150)  # vitesse de la voix
+# Charger la progression sauvegardée
+progress_log_path = "progress_log.txt"
+if not os.path.exists(progress_log_path):
+    with open(progress_log_path, "w") as f:
+        f.write("360\n")  # Si vous avez déjà 360 fichiers, commencez après cela
 
-# Variable pour suivre l'index de la question actuelle
-current_question = 0
+with open(progress_log_path, "r") as f:
+    start_index = int(f.read().strip())
 
-# Fonction de synthèse vocale
-def speak(text):
-    engine.say(text)
-    engine.runAndWait()
+# Définir le batch size pour limiter les requêtes
+batch_size = 50  # Générer 50 fichiers puis faire une pause prolongée
+batch_pause = 300  # Pause de 5 minutes après chaque batch
 
-@app.route('/start', methods=['GET'])
-def start_conversation():
-    global current_question
-    current_question = 0
-    text = questions[current_question]
-    # Démarre la voix dans un thread séparé
-    threading.Thread(target=speak, args=(text,)).start()
-    return jsonify({"question": text})
+# Générer les fichiers audio
+for index, row in data.iterrows():
+    if index < start_index:
+        continue  # Passer les lignes déjà traitées
 
-@app.route('/respond', methods=['POST'])
-def respond():
-    global current_question
-    data = request.json
-    response = data.get('response', '')
+    filename = f"audio_{index + 1}.mp3"
+    filepath = os.path.join(output_folder, filename)
 
-    if current_question == 0:
-        if response.lower() == "oui":
-            current_question += 1
-            text = questions[current_question]
-            threading.Thread(target=speak, args=(text,)).start()
-            return jsonify({"question": text})
+    try:
+        # Construire le texte pour le fichier audio
+        text = (
+            f"Nom : {row['Prénom']} {row['Nom']}, "
+            f"Ville : {row['Ville']}, "
+            f"Métier : {row['Métier']}, "
+            f"Email : {row['Adresse e-mail']}, "
+            f"Numéro de téléphone : {row['Numéro de téléphone']}."
+        )
+
+        # Générer et sauvegarder l'audio
+        tts = gTTS(text=text, lang='fr')
+        tts.save(filepath)
+        print(f"Audio généré pour la ligne {index + 1}: {filepath}")
+
+        # Mettre à jour le fichier de progression
+        with open(progress_log_path, "w") as f:
+            f.write(str(index + 1))
+
+        # Pause courte pour chaque ligne
+        time.sleep(2)
+
+        # Pause prolongée après chaque batch
+        if (index - start_index + 1) % batch_size == 0:
+            print("Pause prolongée pour éviter les limitations...")
+            time.sleep(batch_pause)
+
+    except Exception as e:
+        print(f"Erreur pour la ligne {index + 1}: {e}")
+        if "429" in str(e):
+            print("Trop de requêtes. Pause prolongée pour réduire la charge.")
+            time.sleep(300)  # Pause de 5 minutes
         else:
-            threading.Thread(target=speak, args=("Merci, à bientôt !",)).start()
-            return jsonify({"message": "Fin de l'inscription"})
+            print("Erreur inattendue. Passage à la ligne suivante.")
+        continue
 
-    # Logique pour les autres questions
-    if current_question < len(questions):
-        current_question += 1
-        text = questions[current_question]
-        threading.Thread(target=speak, args=(text,)).start()
-        return jsonify({"question": text})
-
-    threading.Thread(target=speak, args=("Félicitations, vous êtes inscrit !",)).start()
-    return jsonify({"message": "Inscription terminée."})
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-
+print("Tous les fichiers audio ont été générés.")

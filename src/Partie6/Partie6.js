@@ -1,7 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 const Partie6 = () => {
+  const navigate = useNavigate(); // Initialisation du hook useNavigate
+
+  const handleSearchClick = () => {
+    
+    // Logique pour naviguer vers une autre page, par exemple '/results'
+    navigate('/formulaire');
+  };
   return (
     <Section>
       <Content>
@@ -21,7 +29,7 @@ const Partie6 = () => {
           <Feature> Amélioration Continue des Compétences</Feature>
           <Feature> Solutions Simples et Efficaces</Feature>
         </Features>
-        <DiscoverButton>Inscrivez vous en Tant qu'Artisan </DiscoverButton>
+        <DiscoverButton onClick={handleSearchClick}>Inscrivez vous en Tant qu'Artisan </DiscoverButton>
       </Content>
       <Image>
         <img src="/comp12.png" alt="Presentation" />

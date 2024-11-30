@@ -106,7 +106,6 @@ const AssistantUI = ({ question, setQuestion }) => {
 
   // Fonction pour filtrer la réponse et ne garder que le mot clé
   const filterResponse = (response) => {
-    // Utiliser des expressions régulières pour extraire des mots clés (ici, on suppose que les réponses sont les derniers mots mentionnés)
     const words = response.split(" ");
     const lastWord = words[words.length - 1];
     return lastWord; // Retourner seulement le dernier mot comme réponse
@@ -115,13 +114,11 @@ const AssistantUI = ({ question, setQuestion }) => {
   // Fonction pour passer à l'étape suivante
   const nextStep = () => {
     if (step < questions.length - 1) {
-      // Valider la réponse avant de passer à l'étape suivante
       if (response.trim() === "" && message.trim() === "") {
         setError("La réponse ne peut pas être vide.");
         return;
       }
 
-      // Mise à jour de formData avec la réponse
       const currentField = questions[step].field;
       const currentResponse = response.trim() || message.trim();
       setFormData({ ...formData, [currentField]: currentResponse });
@@ -142,7 +139,6 @@ const AssistantUI = ({ question, setQuestion }) => {
 
     setIsSending(true);
     setAudioStatus("Envoi du message texte...");
-    // Simuler l'envoi du message texte au serveur ou autre logique
     setTimeout(() => {
       setResponse(message || response); // Prendre la réponse audio ou texte
       setIsSending(false);
@@ -178,7 +174,7 @@ const AssistantUI = ({ question, setQuestion }) => {
           Assistant Hirafi
         </Typography>
         <Typography variant="h6" align="center" gutterBottom>
-          {questions[step].question} {/* Afficher la question actuelle */}
+          {questions[step].question}
         </Typography>
 
         {/* Input pour le message texte ou audio */}
@@ -258,8 +254,7 @@ const AssistantUI = ({ question, setQuestion }) => {
               fontWeight: "bold",
             }}
           >
-           {response && `Réponse : ${response}`}
-
+            {response && `Réponse : ${response}`}
           </Typography>
         </Box>
       </div>

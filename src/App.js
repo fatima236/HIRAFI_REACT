@@ -1,3 +1,7 @@
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AssistantUI from "./AssistantUI";
+import FormPage from "./FormPage";
 import React from 'react';
 import Partie1 from './Partie1/Partie1';
 import Header from './Header/Header';
@@ -11,7 +15,9 @@ import Partie8 from './Partie8/Partie8';
 import Footer from './Footer/Footer';
 
 
-function App() {
+const App = () => {
+  const [question, setQuestion] = useState("Bienvenue sur Hirafi ! Voulez-vous vous inscrire ?");
+
   return (
     <div>
       <Partie1 />
@@ -28,7 +34,18 @@ function App() {
       
 
     </div>
+    <Router>
+      <Routes>
+        {/* Page principale avec l'assistant */}
+        <Route path="/" element={<AssistantUI question={question} setQuestion={setQuestion} />} />
+        
+        {/* Deuxième page avec le formulaire */}
+        <Route path="/formulaire" element={<FormPage />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
+
+

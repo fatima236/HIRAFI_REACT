@@ -100,20 +100,20 @@
   
   /* Images spécifiques */
   .image-1 {
-    background-image: url("C:\Users\Dell\Pictures\plombe.png");
+    background-image: url("../assets/plombe.png");
     width: 250px;
     height:250px;
   }
   
   .image-2 {
-    background-image: url("C:\Users\Dell\Pictures\comp9.png");
+    background-image: url("../assets/comp9.png");
     width: 250px;
     height:250px;
     
   }
   
   .image-3 {
-    background-image: url("C:\Users\Dell\Pictures\techn.png");
+    background-image: url("../assets/techn.png");
     width:500px
   }
   

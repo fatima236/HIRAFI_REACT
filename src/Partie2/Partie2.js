@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Importer le hook useNavigate
 import './Partie2.css'; // Ajoutez ce fichier CSS pour le style
-
+import technImage from '../assets/techn.png'; 
 const Partie2 = () => {
   const navigate = useNavigate(); // Initialisation du hook useNavigate
 
@@ -43,8 +43,8 @@ const Partie2 = () => {
         </div>
       </div>
       <div className="image-container">
-        <img
-          src="/techn.png"
+      <img
+          src={technImage}  // Corrected path
           alt="Worker"
           className="hero-image"
         />

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
-
+import presentationImage from '../assets/comp12.png'; // Import image
 const Partie6 = () => {
   const navigate = useNavigate(); // Initialisation du hook useNavigate
 
@@ -32,7 +32,7 @@ const Partie6 = () => {
         <DiscoverButton onClick={handleSearchClick}>Inscrivez vous en Tant qu'Artisan </DiscoverButton>
       </Content>
       <Image>
-        <img src="/comp12.png" alt="Presentation" />
+        <img src={presentationImage} alt="Presentation" />
       </Image>
     </Section>
   );

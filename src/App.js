@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AssistantUI from "./AssistantUI";
-import FormPage from "./FormPage";
 import Partie1 from './Partie1/Partie1';
 import Header from './Header/Header';
 import Partie2 from './Partie2/Partie2';
@@ -13,6 +12,7 @@ import Partie7 from './Partie7/Partie7';
 import Partie8 from './Partie8/Partie8';
 import Footer from './Footer/Footer';
 import MapPage from './MapPage/MapPage';
+import Chatbot from './Chatbot'; // Import the Chatbot
 
 const App = () => {
   const [question, setQuestion] = useState("Bienvenue sur Hirafi ! Voulez-vous vous inscrire ?");
@@ -20,43 +20,33 @@ const App = () => {
   return (
     <Router>
       <div>
+        {/* Common site sections */}
         <Partie1 />
         <Header />
-        <Routes>
-          
-          <Route path="/" element={<Partie2 />} />
 
-          {/* Route pour MapPage */}
+        {/* Main Routes */}
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Partie2 />
+              <Partie3 />
+              <Partie4 />
+              <Partie5 />
+              <Partie6 />
+              <Partie7 />
+              <Partie8 />
+              <Footer />
+            </>
+          } />
+
           <Route path="/map" element={<MapPage />} />
+
+          {/* Route for the Form page */}
+          <Route path="/formulaire" element={<AssistantUI question={question} setQuestion={setQuestion} />} />
         </Routes>
 
-        <Partie3 />
-        <Partie4 />
-        <Partie5 />
-        <Routes>
-           <Route path="/" element={<Partie6 />} />
-
-
-          <Route path="/formulaire" element={<AssistantUI />} />
-        </Routes>
-        <Partie7 />
-        <Partie8 />
-        <Footer />
-
-        {/* Routes */}
-        <Routes>
-          {/* Page principale avec l'assistant */}
-          <Route path="/" element={<AssistantUI question={question} setQuestion={setQuestion} />} />
-
-          {/* Deuxième page avec le formulaire */}
-          <Route path="/formulaire" element={<FormPage />} />
-          
-          {/* Route pour Partie2 (changer le chemin) */}
-          <Route path="/" element={<Partie2 />} />
-
-          {/* Route pour MapPage */}
-          <Route path="/map" element={<MapPage />} />
-        </Routes>
+        {/* Global Chatbot */}
+        <Chatbot /> {/* This will be available on all pages */}
       </div>
     </Router>
   );

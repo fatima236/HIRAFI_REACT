@@ -4,7 +4,7 @@
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    background-image: url('C:\Users\Dell\Pictures\techn.png') !important;
+    background-image: url('../assets/techn.png') !important;
     background-size: cover  !important;
     background-position: center center !important;
     

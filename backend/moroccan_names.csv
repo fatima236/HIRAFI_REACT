@@ -1,0 +1,921 @@
+Prénom,Nom,Ville,Numéro de téléphone,Métier,Adresse e-mail
+Rachid,Azouzout,Casablanca,+212 636349128,Artisan,rachid.azouzout@gmail.com
+Omar,Bouayadi,Casablanca,+212 696242471,Artisan,omar.bouayadi@gmail.com
+Mohamed,Nassiri,Casablanca,+212 676412518,Artisan,mohamed.nassiri@gmail.com
+Ahmed,Bentahar,Casablanca,+212 654996445,Artisan,ahmed.bentahar@gmail.com
+Yassine,El Amrani,Casablanca,+212 634493310,Artisan,yassine.el amrani@gmail.com
+Salma,El Bouzidi,Casablanca,+212 685781547,Artisan,salma.el bouzidi@gmail.com
+Fatima,Benali,Casablanca,+212 651743482,Artisan,fatima.benali@gmail.com
+Aicha,Meskini,Casablanca,+212 637382328,Artisan,aicha.meskini@gmail.com
+Soukaina,Mouline,Casablanca,+212 662035795,Artisan,soukaina.mouline@gmail.com
+Zineb,Haddad,Casablanca,+212 672921340,Artisan,zineb.haddad@gmail.com
+Imane,El Fassi,Casablanca,+212 644830714,Artisan,imane.el fassi@gmail.com
+Hanane,Ait Ali,Casablanca,+212 666960112,Artisan,hanane.ait ali@gmail.com
+Laila,Rachidi,Casablanca,+212 650161183,Artisan,laila.rachidi@gmail.com
+Samira,Berrada,Casablanca,+212 614897323,Artisan,samira.berrada@gmail.com
+Meryem,Boulahfa,Casablanca,+212 650941260,Artisan,meryem.boulahfa@gmail.com
+Nadia,Mouh,Casablanca,+212 645725045,Artisan,nadia.mouh@gmail.com
+Khadija,Abada,Casablanca,+212 667313013,Artisan,khadija.abada@gmail.com
+Zohra,Jabari,Casablanca,+212 629635257,Artisan,zohra.jabari@gmail.com
+Rania,Taleb,Casablanca,+212 688461913,Artisan,rania.taleb@gmail.com
+Mouna,Amrani,Casablanca,+212 627740429,Artisan,mouna.amrani@gmail.com
+Amina,Khachani,Casablanca,+212 668484728,Artisan,amina.khachani@gmail.com
+Aymen,El Majdoub,Casablanca,+212 688075940,Artisan,aymen.el majdoub@gmail.com
+Laila,Rahmouni,Casablanca,+212 696536248,Artisan,laila.rahmouni@gmail.com
+Youssef,Amin,Casablanca,+212 635415172,Artisan,youssef.amin@gmail.com
+Said,Mahfoud,Casablanca,+212 645190936,Artisan,said.mahfoud@gmail.com
+Aziz,Sadiqi,Casablanca,+212 675692189,Artisan,aziz.sadiqi@gmail.com
+Nouhaila,Dkhissi,Casablanca,+212 678984641,Artisan,nouhaila.dkhissi@gmail.com
+Asma,Zitoune,Casablanca,+212 630413773,Artisan,asma.zitoune@gmail.com
+Youssef,Fadili,Casablanca,+212 696744659,Artisan,youssef.fadili@gmail.com
+Brahim,Hachani,Casablanca,+212 670229789,Artisan,brahim.hachani@gmail.com
+Othman,El Hachimi,Casablanca,+212 687722068,Artisan,othman.el hachimi@gmail.com
+Walid,Boudach,Casablanca,+212 678874640,Artisan,walid.boudach@gmail.com
+Badr,Alami,Casablanca,+212 685193414,Artisan,badr.alami@gmail.com
+Kamal,El Idrissi,Casablanca,+212 660131120,Artisan,kamal.el idrissi@gmail.com
+Jalal,Chouiter,Casablanca,+212 670407968,Artisan,jalal.chouiter@gmail.com
+Rami,Benchekroun,Casablanca,+212 645245252,Artisan,rami.benchekroun@gmail.com
+Ghizlane,Boussoufi,Casablanca,+212 632197000,Artisan,ghizlane.boussoufi@gmail.com
+Malak,Idrissi,Casablanca,+212 647831109,Artisan,malak.idrissi@gmail.com
+Riham,Kharbach,Casablanca,+212 634681160,Artisan,riham.kharbach@gmail.com
+Lina,Lahlou,Casablanca,+212 616096926,Artisan,lina.lahlou@gmail.com
+Sara,Zouhair,Casablanca,+212 632089960,Artisan,sara.zouhair@gmail.com
+Loubna,Ait Ziane,Casablanca,+212 623801447,Artisan,loubna.ait ziane@gmail.com
+Rania,Triki,Casablanca,+212 686173780,Artisan,rania.triki@gmail.com
+Mounia,El Ouadi,Casablanca,+212 624756385,Artisan,mounia.el ouadi@gmail.com
+Ihssane,Ayadi,Casablanca,+212 670188702,Artisan,ihssane.ayadi@gmail.com
+Yassmine,Laabid,Casablanca,+212 622111025,Artisan,yassmine.laabid@gmail.com
+Adil,Boudraa,Casablanca,+212 693141433,Artisan,adil.boudraa@gmail.com
+Ismail,Boulaich,Casablanca,+212 614310898,Artisan,ismail.boulaich@gmail.com
+Abdelrahman,Berrada,Casablanca,+212 667853146,Artisan,abdelrahman.berrada@gmail.com
+Khalil,Achour,Casablanca,+212 619091845,Artisan,khalil.achour@gmail.com
+Khalid,El Fassi,Casablanca,+212 654967318,Artisan,khalid.el fassi@gmail.com
+Amine,El Yacoubi,Casablanca,+212 650196183,Artisan,amine.el yacoubi@gmail.com
+Mouad,Benjelloun,Casablanca,+212 628032303,Artisan,mouad.benjelloun@gmail.com
+Mustapha,El Moutawakel,Casablanca,+212 668198177,Artisan,mustapha.el moutawakel@gmail.com
+Sami,Ouaaziz,Casablanca,+212 678384179,Artisan,sami.ouaaziz@gmail.com
+Nour,Hassani,Casablanca,+212 617938894,Artisan,nour.hassani@gmail.com
+Hassan,Mechergui,Casablanca,+212 638334191,Artisan,hassan.mechergui@gmail.com
+Imane,El Bakkali,Casablanca,+212 661501368,Artisan,imane.el bakkali@gmail.com
+Rachida,Rhouma,Casablanca,+212 688086871,Artisan,rachida.rhouma@gmail.com
+Yasmina,Khazri,Casablanca,+212 630928652,Artisan,yasmina.khazri@gmail.com
+Samira,El Hajjaji,Casablanca,+212 611842200,Artisan,samira.el hajjaji@gmail.com
+Amira,Boukhari,Casablanca,+212 615328997,Artisan,amira.boukhari@gmail.com
+Bouchra,Laarej,Casablanca,+212 677304574,Artisan,bouchra.laarej@gmail.com
+Azzedine,Benjeddou,Casablanca,+212 691749497,Artisan,azzedine.benjeddou@gmail.com
+Oussama,Boudlal,Casablanca,+212 624601769,Artisan,oussama.boudlal@gmail.com
+Hicham,Naciri,Casablanca,+212 612195242,Artisan,hicham.naciri@gmail.com
+Naima,Ouedraogo,Casablanca,+212 657150421,Artisan,naima.ouedraogo@gmail.com
+Saida,Assoumani,Casablanca,+212 668077179,Artisan,saida.assoumani@gmail.com
+Mounir,Chikh,Casablanca,+212 657615917,Artisan,mounir.chikh@gmail.com
+Rafik,Idrissi,Casablanca,+212 623737739,Artisan,rafik.idrissi@gmail.com
+Yassir,Koudia,Casablanca,+212 670555263,Artisan,yassir.koudia@gmail.com
+Leila,Rahhali,Casablanca,+212 643131940,Artisan,leila.rahhali@gmail.com
+Mouad,Mannai,Casablanca,+212 624979366,Artisan,mouad.mannai@gmail.com
+Jihane,Belkassem,Casablanca,+212 647372676,Artisan,jihane.belkassem@gmail.com
+Khalil,Al Bouchouari,Casablanca,+212 634567544,Artisan,khalil.al bouchouari@gmail.com
+Anas,Akhrif,Casablanca,+212 655864972,Artisan,anas.akhrif@gmail.com
+Kamal,Ghazal,Casablanca,+212 636615556,Artisan,kamal.ghazal@gmail.com
+Abderrahim,Zafri,Casablanca,+212 643747887,Artisan,abderrahim.zafri@gmail.com
+Brahim,Boujlida,Casablanca,+212 658172539,Artisan,brahim.boujlida@gmail.com
+Sidi,Benslama,Casablanca,+212 648117430,Artisan,sidi.benslama@gmail.com
+Mouhammad,Harit,Casablanca,+212 653299664,Artisan,mouhammad.harit@gmail.com
+Hassan,Mouhib,Casablanca,+212 668529167,Artisan,hassan.mouhib@gmail.com
+Mohamed,Tahiri,Casablanca,+212 644870617,Artisan,mohamed.tahiri@gmail.com
+Badr,Rhimou,Casablanca,+212 666797432,Artisan,badr.rhimou@gmail.com
+Omar,Messaoud,Casablanca,+212 660340974,Artisan,omar.messaoud@gmail.com
+Saber,El Fergui,Casablanca,+212 692049441,Artisan,saber.el fergui@gmail.com
+Adil,Zitouni,Casablanca,+212 668057875,Artisan,adil.zitouni@gmail.com
+Anwar,Ait Hamouda,Casablanca,+212 614281555,Artisan,anwar.ait hamouda@gmail.com
+Mounia,Fathi,Casablanca,+212 651767328,Artisan,mounia.fathi@gmail.com
+Kawtar,El Hayani,Casablanca,+212 689198562,Artisan,kawtar.el hayani@gmail.com
+Yassine,Jarmouni,Casablanca,+212 635330999,Artisan,yassine.jarmouni@gmail.com
+Souad,Bouchoucha,Casablanca,+212 642421334,Artisan,souad.bouchoucha@gmail.com
+Rachid,Sadiq,Casablanca,+212 610274359,Artisan,rachid.sadiq@gmail.com
+Omar,Cherkaoui,Casablanca,+212 631492273,Artisan,omar.cherkaoui@gmail.com
+Mohamed,Agoulmine,Casablanca,+212 689160069,Artisan,mohamed.agoulmine@gmail.com
+Ahmed,Boujida,Casablanca,+212 644561667,Artisan,ahmed.boujida@gmail.com
+Yassine,El Choubat,Casablanca,+212 639923582,Artisan,yassine.el choubat@gmail.com
+Salma,Rahhal,Casablanca,+212 698338007,Artisan,salma.rahhal@gmail.com
+Fatima,Miri,Casablanca,+212 656191867,Artisan,fatima.miri@gmail.com
+Aicha,Faddoul,Casablanca,+212 671770864,Artisan,aicha.faddoul@gmail.com
+Soukaina,Harkat,Casablanca,+212 684616134,Artisan,soukaina.harkat@gmail.com
+Zineb,Kadiri,Casablanca,+212 638240593,Artisan,zineb.kadiri@gmail.com
+Imane,El Farissi,Casablanca,+212 679567180,Artisan,imane.el farissi@gmail.com
+Hanane,Bouhari,Casablanca,+212 642929567,Artisan,hanane.bouhari@gmail.com
+Laila,Oukbani,Casablanca,+212 629011127,Artisan,laila.oukbani@gmail.com
+Samira,Saoudi,Casablanca,+212 684784082,Artisan,samira.saoudi@gmail.com
+Meryem,Rafik,Casablanca,+212 672311994,Artisan,meryem.rafik@gmail.com
+Nadia,Jadidi,Casablanca,+212 696737406,Artisan,nadia.jadidi@gmail.com
+Khadija,Mansouri,Casablanca,+212 636088908,Artisan,khadija.mansouri@gmail.com
+Zohra,Zidi,Casablanca,+212 697861055,Artisan,zohra.zidi@gmail.com
+Rania,Ouaziz,Casablanca,+212 662461469,Artisan,rania.ouaziz@gmail.com
+Mouna,Amrani,Casablanca,+212 615074968,Artisan,mouna.amrani@gmail.com
+Amina,Alami,Casablanca,+212 640001354,Artisan,amina.alami@gmail.com
+Aymen,Mazouzi,Casablanca,+212 670300808,Artisan,aymen.mazouzi@gmail.com
+Laila,Messaoud,Casablanca,+212 692567590,Artisan,laila.messaoud@gmail.com
+Youssef,Chadli,Casablanca,+212 644852659,Artisan,youssef.chadli@gmail.com
+Said,Hajji,Casablanca,+212 668170991,Artisan,said.hajji@gmail.com
+Aziz,Jilani,Casablanca,+212 694619751,Artisan,aziz.jilani@gmail.com
+Nouhaila,Bouchareb,Casablanca,+212 628983917,Artisan,nouhaila.bouchareb@gmail.com
+Asma,Azouzout,Casablanca,+212 621166111,Artisan,asma.azouzout@gmail.com
+Youssef,Bouayadi,Casablanca,+212 677340038,Artisan,youssef.bouayadi@gmail.com
+Brahim,Nassiri,Casablanca,+212 689319113,Artisan,brahim.nassiri@gmail.com
+Othman,Bentahar,Casablanca,+212 616118646,Artisan,othman.bentahar@gmail.com
+Walid,El Amrani,Casablanca,+212 669200108,Artisan,walid.el amrani@gmail.com
+Badr,El Bouzidi,Casablanca,+212 695406346,Artisan,badr.el bouzidi@gmail.com
+Kamal,Benali,Casablanca,+212 646411226,Artisan,kamal.benali@gmail.com
+Jalal,Meskini,Casablanca,+212 638376357,Artisan,jalal.meskini@gmail.com
+Rami,Mouline,Casablanca,+212 688148219,Artisan,rami.mouline@gmail.com
+Ghizlane,Haddad,Casablanca,+212 620925725,Artisan,ghizlane.haddad@gmail.com
+Malak,El Fassi,Casablanca,+212 681075204,Artisan,malak.el fassi@gmail.com
+Riham,Ait Ali,Casablanca,+212 684156710,Artisan,riham.ait ali@gmail.com
+Lina,Rachidi,Casablanca,+212 628858237,Artisan,lina.rachidi@gmail.com
+Sara,Berrada,Casablanca,+212 643316143,Artisan,sara.berrada@gmail.com
+Loubna,Boulahfa,Casablanca,+212 684816213,Artisan,loubna.boulahfa@gmail.com
+Rania,Mouh,Casablanca,+212 626378606,Artisan,rania.mouh@gmail.com
+Mounia,Abada,Casablanca,+212 650301123,Artisan,mounia.abada@gmail.com
+Ihssane,Jabari,Casablanca,+212 679187406,Artisan,ihssane.jabari@gmail.com
+Yassmine,Taleb,Casablanca,+212 610388323,Artisan,yassmine.taleb@gmail.com
+Adil,Amrani,Casablanca,+212 648991252,Artisan,adil.amrani@gmail.com
+Ismail,Khachani,Casablanca,+212 692415797,Artisan,ismail.khachani@gmail.com
+Abdelrahman,El Majdoub,Casablanca,+212 625240233,Artisan,abdelrahman.el majdoub@gmail.com
+Khalil,Rahmouni,Casablanca,+212 616582237,Artisan,khalil.rahmouni@gmail.com
+Khalid,Amin,Casablanca,+212 633111446,Artisan,khalid.amin@gmail.com
+Amine,Mahfoud,Casablanca,+212 611552773,Artisan,amine.mahfoud@gmail.com
+Mouad,Sadiqi,Casablanca,+212 684475493,Artisan,mouad.sadiqi@gmail.com
+Mustapha,Dkhissi,Casablanca,+212 630095933,Artisan,mustapha.dkhissi@gmail.com
+Sami,Zitoune,Casablanca,+212 650519075,Artisan,sami.zitoune@gmail.com
+Nour,Fadili,Casablanca,+212 690304102,Artisan,nour.fadili@gmail.com
+Hassan,Hachani,Casablanca,+212 693729834,Artisan,hassan.hachani@gmail.com
+Imane,El Hachimi,Casablanca,+212 612453052,Artisan,imane.el hachimi@gmail.com
+Rachida,Boudach,Casablanca,+212 614772739,Artisan,rachida.boudach@gmail.com
+Yasmina,Alami,Casablanca,+212 634932931,Artisan,yasmina.alami@gmail.com
+Samira,El Idrissi,Casablanca,+212 672681742,Artisan,samira.el idrissi@gmail.com
+Amira,Chouiter,Casablanca,+212 676554614,Artisan,amira.chouiter@gmail.com
+Bouchra,Benchekroun,Casablanca,+212 698590431,Artisan,bouchra.benchekroun@gmail.com
+Azzedine,Boussoufi,Casablanca,+212 613943665,Artisan,azzedine.boussoufi@gmail.com
+Oussama,Idrissi,Casablanca,+212 684225139,Artisan,oussama.idrissi@gmail.com
+Hicham,Kharbach,Casablanca,+212 662594768,Artisan,hicham.kharbach@gmail.com
+Naima,Lahlou,Casablanca,+212 671295320,Artisan,naima.lahlou@gmail.com
+Saida,Zouhair,Casablanca,+212 671739399,Artisan,saida.zouhair@gmail.com
+Mounir,Ait Ziane,Casablanca,+212 612613698,Artisan,mounir.ait ziane@gmail.com
+Rafik,Triki,Casablanca,+212 615245621,Artisan,rafik.triki@gmail.com
+Yassir,El Ouadi,Casablanca,+212 646849569,Artisan,yassir.el ouadi@gmail.com
+Leila,Ayadi,Casablanca,+212 633239538,Artisan,leila.ayadi@gmail.com
+Mouad,Laabid,Casablanca,+212 612604136,Artisan,mouad.laabid@gmail.com
+Jihane,Boudraa,Casablanca,+212 687280676,Artisan,jihane.boudraa@gmail.com
+Khalil,Boulaich,Casablanca,+212 648307444,Artisan,khalil.boulaich@gmail.com
+Anas,Berrada,Casablanca,+212 631615752,Artisan,anas.berrada@gmail.com
+Kamal,Achour,Casablanca,+212 642078375,Artisan,kamal.achour@gmail.com
+Abderrahim,El Fassi,Casablanca,+212 690264627,Artisan,abderrahim.el fassi@gmail.com
+Brahim,El Yacoubi,Casablanca,+212 616793497,Artisan,brahim.el yacoubi@gmail.com
+Sidi,Benjelloun,Casablanca,+212 666937660,Artisan,sidi.benjelloun@gmail.com
+Mouhammad,El Moutawakel,Casablanca,+212 614215218,Artisan,mouhammad.el moutawakel@gmail.com
+Hassan,Ouaaziz,Casablanca,+212 648586528,Artisan,hassan.ouaaziz@gmail.com
+Mohamed,Hassani,Casablanca,+212 623836889,Artisan,mohamed.hassani@gmail.com
+Badr,Mechergui,Casablanca,+212 663442054,Artisan,badr.mechergui@gmail.com
+Omar,El Bakkali,Casablanca,+212 697558434,Artisan,omar.el bakkali@gmail.com
+Saber,Rhouma,Casablanca,+212 655224542,Artisan,saber.rhouma@gmail.com
+Adil,Khazri,Casablanca,+212 673746102,Artisan,adil.khazri@gmail.com
+Anwar,El Hajjaji,Casablanca,+212 688111043,Artisan,anwar.el hajjaji@gmail.com
+Mounia,Boukhari,Casablanca,+212 672627883,Artisan,mounia.boukhari@gmail.com
+Kawtar,Laarej,Casablanca,+212 692432834,Artisan,kawtar.laarej@gmail.com
+Yassine,Benjeddou,Casablanca,+212 665271027,Artisan,yassine.benjeddou@gmail.com
+Souad,Boudlal,Casablanca,+212 675576235,Artisan,souad.boudlal@gmail.com
+Rachid,Naciri,Casablanca,+212 624112121,Artisan,rachid.naciri@gmail.com
+Omar,Ouedraogo,Casablanca,+212 691132482,Artisan,omar.ouedraogo@gmail.com
+Mohamed,Assoumani,Casablanca,+212 637153357,Artisan,mohamed.assoumani@gmail.com
+Ahmed,Chikh,Casablanca,+212 655510653,Artisan,ahmed.chikh@gmail.com
+Yassine,Idrissi,Casablanca,+212 638920922,Artisan,yassine.idrissi@gmail.com
+Salma,Koudia,Casablanca,+212 698755011,Artisan,salma.koudia@gmail.com
+Fatima,Rahhali,Casablanca,+212 675733942,Artisan,fatima.rahhali@gmail.com
+Aicha,Mannai,Casablanca,+212 612448654,Artisan,aicha.mannai@gmail.com
+Soukaina,Belkassem,Casablanca,+212 631179767,Artisan,soukaina.belkassem@gmail.com
+Zineb,Al Bouchouari,Casablanca,+212 653053027,Artisan,zineb.al bouchouari@gmail.com
+Imane,Akhrif,Casablanca,+212 646612190,Artisan,imane.akhrif@gmail.com
+Hanane,Ghazal,Casablanca,+212 680664288,Artisan,hanane.ghazal@gmail.com
+Laila,Zafri,Casablanca,+212 697219581,Artisan,laila.zafri@gmail.com
+Samira,Boujlida,Casablanca,+212 683266271,Artisan,samira.boujlida@gmail.com
+Meryem,Benslama,Casablanca,+212 616607418,Artisan,meryem.benslama@gmail.com
+Nadia,Harit,Casablanca,+212 693292113,Artisan,nadia.harit@gmail.com
+Khadija,Mouhib,Casablanca,+212 680683494,Artisan,khadija.mouhib@gmail.com
+Zohra,Tahiri,Casablanca,+212 694779475,Artisan,zohra.tahiri@gmail.com
+Rania,Rhimou,Casablanca,+212 692643794,Artisan,rania.rhimou@gmail.com
+Mouna,Messaoud,Casablanca,+212 624558455,Artisan,mouna.messaoud@gmail.com
+Amina,El Fergui,Casablanca,+212 647871265,Artisan,amina.el fergui@gmail.com
+Aymen,Zitouni,Casablanca,+212 619233681,Artisan,aymen.zitouni@gmail.com
+Laila,Ait Hamouda,Casablanca,+212 634838971,Artisan,laila.ait hamouda@gmail.com
+Youssef,Fathi,Casablanca,+212 637428860,Artisan,youssef.fathi@gmail.com
+Said,El Hayani,Casablanca,+212 631607514,Artisan,said.el hayani@gmail.com
+Aziz,Jarmouni,Casablanca,+212 686985352,Artisan,aziz.jarmouni@gmail.com
+Nouhaila,Bouchoucha,Casablanca,+212 624079003,Artisan,nouhaila.bouchoucha@gmail.com
+Asma,Sadiq,Casablanca,+212 684253512,Artisan,asma.sadiq@gmail.com
+Youssef,Cherkaoui,Casablanca,+212 644310916,Artisan,youssef.cherkaoui@gmail.com
+Brahim,Agoulmine,Casablanca,+212 631549006,Artisan,brahim.agoulmine@gmail.com
+Othman,Boujida,Casablanca,+212 610519920,Artisan,othman.boujida@gmail.com
+Walid,El Choubat,Casablanca,+212 617188916,Artisan,walid.el choubat@gmail.com
+Badr,Rahhal,Casablanca,+212 616508832,Artisan,badr.rahhal@gmail.com
+Kamal,Miri,Casablanca,+212 698423298,Artisan,kamal.miri@gmail.com
+Jalal,Faddoul,Casablanca,+212 638643618,Artisan,jalal.faddoul@gmail.com
+Rami,Harkat,Casablanca,+212 634129922,Artisan,rami.harkat@gmail.com
+Ghizlane,Kadiri,Casablanca,+212 692903927,Artisan,ghizlane.kadiri@gmail.com
+Malak,El Farissi,Casablanca,+212 662740986,Artisan,malak.el farissi@gmail.com
+Riham,Bouhari,Casablanca,+212 610897771,Artisan,riham.bouhari@gmail.com
+Lina,Oukbani,Casablanca,+212 613206684,Artisan,lina.oukbani@gmail.com
+Sara,Saoudi,Casablanca,+212 639027972,Artisan,sara.saoudi@gmail.com
+Loubna,Rafik,Casablanca,+212 633510832,Artisan,loubna.rafik@gmail.com
+Rania,Jadidi,Casablanca,+212 640385898,Artisan,rania.jadidi@gmail.com
+Mounia,Mansouri,Casablanca,+212 625245347,Artisan,mounia.mansouri@gmail.com
+Ihssane,Zidi,Casablanca,+212 616664622,Artisan,ihssane.zidi@gmail.com
+Yassmine,Ouaziz,Casablanca,+212 649919995,Artisan,yassmine.ouaziz@gmail.com
+Adil,Amrani,Casablanca,+212 632622777,Artisan,adil.amrani@gmail.com
+Ismail,Alami,Casablanca,+212 615533520,Artisan,ismail.alami@gmail.com
+Abdelrahman,Mazouzi,Casablanca,+212 647277854,Artisan,abdelrahman.mazouzi@gmail.com
+Khalil,Messaoud,Casablanca,+212 665400757,Artisan,khalil.messaoud@gmail.com
+Khalid,Chadli,Casablanca,+212 644053957,Artisan,khalid.chadli@gmail.com
+Amine,Hajji,Casablanca,+212 611071627,Artisan,amine.hajji@gmail.com
+Mouad,Jilani,Casablanca,+212 627048445,Artisan,mouad.jilani@gmail.com
+Mustapha,Bouchareb,Casablanca,+212 630104552,Artisan,mustapha.bouchareb@gmail.com
+Sami,Azouzout,Casablanca,+212 663485265,Artisan,sami.azouzout@gmail.com
+Nour,Bouayadi,Casablanca,+212 621649762,Artisan,nour.bouayadi@gmail.com
+Hassan,Nassiri,Casablanca,+212 653798340,Artisan,hassan.nassiri@gmail.com
+Imane,Bentahar,Casablanca,+212 684286962,Artisan,imane.bentahar@gmail.com
+Rachida,El Amrani,Casablanca,+212 665377681,Artisan,rachida.el amrani@gmail.com
+Yasmina,El Bouzidi,Casablanca,+212 660266467,Artisan,yasmina.el bouzidi@gmail.com
+Samira,Benali,Casablanca,+212 645169103,Artisan,samira.benali@gmail.com
+Amira,Meskini,Casablanca,+212 683081391,Artisan,amira.meskini@gmail.com
+Bouchra,Mouline,Casablanca,+212 660643884,Artisan,bouchra.mouline@gmail.com
+Azzedine,Haddad,Casablanca,+212 680823964,Artisan,azzedine.haddad@gmail.com
+Oussama,El Fassi,Casablanca,+212 662263203,Artisan,oussama.el fassi@gmail.com
+Hicham,Ait Ali,Casablanca,+212 657812455,Artisan,hicham.ait ali@gmail.com
+Naima,Rachidi,Casablanca,+212 681707076,Artisan,naima.rachidi@gmail.com
+Saida,Berrada,Casablanca,+212 673775367,Artisan,saida.berrada@gmail.com
+Mounir,Boulahfa,Casablanca,+212 691899504,Artisan,mounir.boulahfa@gmail.com
+Rafik,Mouh,Casablanca,+212 672988848,Artisan,rafik.mouh@gmail.com
+Yassir,Abada,Casablanca,+212 638537195,Artisan,yassir.abada@gmail.com
+Leila,Jabari,Casablanca,+212 642820864,Artisan,leila.jabari@gmail.com
+Mouad,Taleb,Casablanca,+212 648927175,Artisan,mouad.taleb@gmail.com
+Jihane,Amrani,Casablanca,+212 666244561,Artisan,jihane.amrani@gmail.com
+Khalil,Khachani,Casablanca,+212 655734403,Artisan,khalil.khachani@gmail.com
+Anas,El Majdoub,Casablanca,+212 618824064,Artisan,anas.el majdoub@gmail.com
+Kamal,Rahmouni,Casablanca,+212 667242156,Artisan,kamal.rahmouni@gmail.com
+Abderrahim,Amin,Casablanca,+212 674909693,Artisan,abderrahim.amin@gmail.com
+Brahim,Mahfoud,Casablanca,+212 679789776,Artisan,brahim.mahfoud@gmail.com
+Sidi,Sadiqi,Casablanca,+212 694668963,Artisan,sidi.sadiqi@gmail.com
+Mouhammad,Dkhissi,Casablanca,+212 634040302,Artisan,mouhammad.dkhissi@gmail.com
+Hassan,Zitoune,Casablanca,+212 660493352,Artisan,hassan.zitoune@gmail.com
+Mohamed,Fadili,Casablanca,+212 670337141,Artisan,mohamed.fadili@gmail.com
+Badr,Hachani,Casablanca,+212 663095673,Artisan,badr.hachani@gmail.com
+Omar,El Hachimi,Casablanca,+212 689279942,Artisan,omar.el hachimi@gmail.com
+Saber,Boudach,Casablanca,+212 676295213,Artisan,saber.boudach@gmail.com
+Adil,Alami,Casablanca,+212 628370429,Artisan,adil.alami@gmail.com
+Anwar,El Idrissi,Casablanca,+212 628168721,Artisan,anwar.el idrissi@gmail.com
+Mounia,Chouiter,Casablanca,+212 645068511,Artisan,mounia.chouiter@gmail.com
+Kawtar,Benchekroun,Casablanca,+212 659233160,Artisan,kawtar.benchekroun@gmail.com
+Yassine,Boussoufi,Casablanca,+212 641186583,Artisan,yassine.boussoufi@gmail.com
+Souad,Idrissi,Casablanca,+212 643349824,Artisan,souad.idrissi@gmail.com
+Rachid,Kharbach,Casablanca,+212 689831970,Artisan,rachid.kharbach@gmail.com
+Omar,Lahlou,Casablanca,+212 650910099,Artisan,omar.lahlou@gmail.com
+Mohamed,Zouhair,Casablanca,+212 650717862,Artisan,mohamed.zouhair@gmail.com
+Ahmed,Ait Ziane,Casablanca,+212 672518445,Artisan,ahmed.ait ziane@gmail.com
+Yassine,Triki,Casablanca,+212 680201236,Artisan,yassine.triki@gmail.com
+Salma,El Ouadi,Casablanca,+212 646647714,Artisan,salma.el ouadi@gmail.com
+Fatima,Ayadi,Casablanca,+212 667745948,Artisan,fatima.ayadi@gmail.com
+Aicha,Laabid,Casablanca,+212 645319172,Artisan,aicha.laabid@gmail.com
+Soukaina,Boudraa,Casablanca,+212 684360995,Artisan,soukaina.boudraa@gmail.com
+Zineb,Boulaich,Casablanca,+212 646915421,Artisan,zineb.boulaich@gmail.com
+Imane,Berrada,Casablanca,+212 642742548,Artisan,imane.berrada@gmail.com
+Hanane,Achour,Casablanca,+212 694941358,Artisan,hanane.achour@gmail.com
+Laila,El Fassi,Casablanca,+212 631745261,Artisan,laila.el fassi@gmail.com
+Samira,El Yacoubi,Casablanca,+212 671059191,Artisan,samira.el yacoubi@gmail.com
+Meryem,Benjelloun,Casablanca,+212 624724012,Artisan,meryem.benjelloun@gmail.com
+Nadia,El Moutawakel,Casablanca,+212 656822081,Artisan,nadia.el moutawakel@gmail.com
+Khadija,Ouaaziz,Casablanca,+212 664949024,Artisan,khadija.ouaaziz@gmail.com
+Zohra,Hassani,Casablanca,+212 653812033,Artisan,zohra.hassani@gmail.com
+Rania,Mechergui,Casablanca,+212 683059308,Artisan,rania.mechergui@gmail.com
+Mouna,El Bakkali,Casablanca,+212 636890570,Artisan,mouna.el bakkali@gmail.com
+Amina,Rhouma,Casablanca,+212 681302965,Artisan,amina.rhouma@gmail.com
+Aymen,Khazri,Casablanca,+212 612278017,Artisan,aymen.khazri@gmail.com
+Laila,El Hajjaji,Casablanca,+212 677683638,Artisan,laila.el hajjaji@gmail.com
+Youssef,Boukhari,Casablanca,+212 674533203,Artisan,youssef.boukhari@gmail.com
+Said,Laarej,Casablanca,+212 649147363,Artisan,said.laarej@gmail.com
+Aziz,Benjeddou,Casablanca,+212 630772216,Artisan,aziz.benjeddou@gmail.com
+Nouhaila,Boudlal,Casablanca,+212 698958373,Artisan,nouhaila.boudlal@gmail.com
+Asma,Naciri,Casablanca,+212 610155844,Artisan,asma.naciri@gmail.com
+Youssef,Ouedraogo,Casablanca,+212 620399944,Artisan,youssef.ouedraogo@gmail.com
+Brahim,Assoumani,Casablanca,+212 632296107,Artisan,brahim.assoumani@gmail.com
+Othman,Chikh,Casablanca,+212 631317406,Artisan,othman.chikh@gmail.com
+Walid,Idrissi,Casablanca,+212 654376591,Artisan,walid.idrissi@gmail.com
+Badr,Koudia,Casablanca,+212 669846415,Artisan,badr.koudia@gmail.com
+Kamal,Rahhali,Casablanca,+212 658872013,Artisan,kamal.rahhali@gmail.com
+Jalal,Mannai,Casablanca,+212 668104717,Artisan,jalal.mannai@gmail.com
+Rami,Belkassem,Casablanca,+212 611058924,Artisan,rami.belkassem@gmail.com
+Ghizlane,Al Bouchouari,Casablanca,+212 685998480,Artisan,ghizlane.al bouchouari@gmail.com
+Malak,Akhrif,Casablanca,+212 647753808,Artisan,malak.akhrif@gmail.com
+Riham,Ghazal,Casablanca,+212 651224093,Artisan,riham.ghazal@gmail.com
+Lina,Zafri,Casablanca,+212 611329608,Artisan,lina.zafri@gmail.com
+Sara,Boujlida,Casablanca,+212 653728352,Artisan,sara.boujlida@gmail.com
+Loubna,Benslama,Casablanca,+212 636729727,Artisan,loubna.benslama@gmail.com
+Rania,Harit,Casablanca,+212 619161110,Artisan,rania.harit@gmail.com
+Mounia,Mouhib,Casablanca,+212 628247567,Artisan,mounia.mouhib@gmail.com
+Ihssane,Tahiri,Casablanca,+212 611658959,Artisan,ihssane.tahiri@gmail.com
+Yassmine,Rhimou,Casablanca,+212 672876038,Artisan,yassmine.rhimou@gmail.com
+Adil,Messaoud,Casablanca,+212 684347460,Artisan,adil.messaoud@gmail.com
+Ismail,El Fergui,Casablanca,+212 644209880,Artisan,ismail.el fergui@gmail.com
+Abdelrahman,Zitouni,Casablanca,+212 642888054,Artisan,abdelrahman.zitouni@gmail.com
+Khalil,Ait Hamouda,Casablanca,+212 640708205,Artisan,khalil.ait hamouda@gmail.com
+Khalid,Fathi,Casablanca,+212 641054936,Artisan,khalid.fathi@gmail.com
+Amine,El Hayani,Casablanca,+212 690615356,Artisan,amine.el hayani@gmail.com
+Mouad,Jarmouni,Casablanca,+212 662543980,Artisan,mouad.jarmouni@gmail.com
+Mustapha,Bouchoucha,Casablanca,+212 623756575,Artisan,mustapha.bouchoucha@gmail.com
+Sami,Sadiq,Casablanca,+212 643122297,Artisan,sami.sadiq@gmail.com
+Nour,Cherkaoui,Casablanca,+212 617407118,Artisan,nour.cherkaoui@gmail.com
+Hassan,Agoulmine,Casablanca,+212 637018113,Artisan,hassan.agoulmine@gmail.com
+Imane,Boujida,Casablanca,+212 677832701,Artisan,imane.boujida@gmail.com
+Rachida,El Choubat,Casablanca,+212 687918815,Artisan,rachida.el choubat@gmail.com
+Yasmina,Rahhal,Casablanca,+212 629377042,Artisan,yasmina.rahhal@gmail.com
+Samira,Miri,Casablanca,+212 612363245,Artisan,samira.miri@gmail.com
+Amira,Faddoul,Casablanca,+212 615315842,Artisan,amira.faddoul@gmail.com
+Bouchra,Harkat,Casablanca,+212 652294130,Artisan,bouchra.harkat@gmail.com
+Azzedine,Kadiri,Casablanca,+212 686753017,Artisan,azzedine.kadiri@gmail.com
+Oussama,El Farissi,Casablanca,+212 615461244,Artisan,oussama.el farissi@gmail.com
+Hicham,Bouhari,Casablanca,+212 680093072,Artisan,hicham.bouhari@gmail.com
+Naima,Oukbani,Casablanca,+212 675675767,Artisan,naima.oukbani@gmail.com
+Saida,Saoudi,Casablanca,+212 684617268,Artisan,saida.saoudi@gmail.com
+Mounir,Rafik,Casablanca,+212 664761750,Artisan,mounir.rafik@gmail.com
+Rafik,Jadidi,Casablanca,+212 685691825,Artisan,rafik.jadidi@gmail.com
+Yassir,Mansouri,Casablanca,+212 612986783,Artisan,yassir.mansouri@gmail.com
+Leila,Zidi,Casablanca,+212 651876167,Artisan,leila.zidi@gmail.com
+Mouad,Ouaziz,Casablanca,+212 665925395,Artisan,mouad.ouaziz@gmail.com
+Jihane,Amrani,Casablanca,+212 633359696,Artisan,jihane.amrani@gmail.com
+Khalil,Alami,Casablanca,+212 659965850,Artisan,khalil.alami@gmail.com
+Anas,Mazouzi,Casablanca,+212 627235598,Artisan,anas.mazouzi@gmail.com
+Kamal,Messaoud,Casablanca,+212 674081095,Artisan,kamal.messaoud@gmail.com
+Abderrahim,Chadli,Casablanca,+212 636767544,Artisan,abderrahim.chadli@gmail.com
+Brahim,Hajji,Casablanca,+212 662521214,Artisan,brahim.hajji@gmail.com
+Sidi,Jilani,Casablanca,+212 675831361,Artisan,sidi.jilani@gmail.com
+Mouhammad,Bouchareb,Casablanca,+212 654734478,Artisan,mouhammad.bouchareb@gmail.com
+Hassan,Azouzout,Casablanca,+212 674852522,Artisan,hassan.azouzout@gmail.com
+Mohamed,Bouayadi,Casablanca,+212 673703747,Artisan,mohamed.bouayadi@gmail.com
+Badr,Nassiri,Casablanca,+212 610391796,Artisan,badr.nassiri@gmail.com
+Omar,Bentahar,Casablanca,+212 683846288,Artisan,omar.bentahar@gmail.com
+Saber,El Amrani,Casablanca,+212 686614039,Artisan,saber.el amrani@gmail.com
+Adil,El Bouzidi,Casablanca,+212 615552389,Artisan,adil.el bouzidi@gmail.com
+Anwar,Benali,Casablanca,+212 641205530,Artisan,anwar.benali@gmail.com
+Mounia,Meskini,Casablanca,+212 692461266,Artisan,mounia.meskini@gmail.com
+Kawtar,Mouline,Casablanca,+212 635435119,Artisan,kawtar.mouline@gmail.com
+Yassine,Haddad,Casablanca,+212 687496852,Artisan,yassine.haddad@gmail.com
+Souad,El Fassi,Casablanca,+212 698427921,Artisan,souad.el fassi@gmail.com
+Rachid,Ait Ali,Casablanca,+212 695632585,Artisan,rachid.ait ali@gmail.com
+Omar,Rachidi,Casablanca,+212 649254614,Artisan,omar.rachidi@gmail.com
+Mohamed,Berrada,Casablanca,+212 696192771,Artisan,mohamed.berrada@gmail.com
+Ahmed,Boulahfa,Casablanca,+212 681089680,Artisan,ahmed.boulahfa@gmail.com
+Yassine,Mouh,Casablanca,+212 690196780,Artisan,yassine.mouh@gmail.com
+Salma,Abada,Casablanca,+212 653278231,Artisan,salma.abada@gmail.com
+Fatima,Jabari,Casablanca,+212 657740365,Artisan,fatima.jabari@gmail.com
+Aicha,Taleb,Casablanca,+212 694089778,Artisan,aicha.taleb@gmail.com
+Soukaina,Amrani,Casablanca,+212 630116113,Artisan,soukaina.amrani@gmail.com
+Zineb,Khachani,Casablanca,+212 650866077,Artisan,zineb.khachani@gmail.com
+Imane,El Majdoub,Casablanca,+212 626692737,Artisan,imane.el majdoub@gmail.com
+Hanane,Rahmouni,Casablanca,+212 695277477,Artisan,hanane.rahmouni@gmail.com
+Laila,Amin,Casablanca,+212 629403557,Artisan,laila.amin@gmail.com
+Samira,Mahfoud,Casablanca,+212 659614129,Artisan,samira.mahfoud@gmail.com
+Meryem,Sadiqi,Casablanca,+212 678189727,Artisan,meryem.sadiqi@gmail.com
+Nadia,Dkhissi,Casablanca,+212 660761263,Artisan,nadia.dkhissi@gmail.com
+Khadija,Zitoune,Casablanca,+212 649380935,Artisan,khadija.zitoune@gmail.com
+Zohra,Fadili,Casablanca,+212 659019140,Artisan,zohra.fadili@gmail.com
+Rania,Hachani,Casablanca,+212 639322421,Artisan,rania.hachani@gmail.com
+Mouna,El Hachimi,Casablanca,+212 682473604,Artisan,mouna.el hachimi@gmail.com
+Amina,Boudach,Casablanca,+212 681610016,Artisan,amina.boudach@gmail.com
+Aymen,Alami,Casablanca,+212 662924729,Artisan,aymen.alami@gmail.com
+Laila,El Idrissi,Casablanca,+212 658794676,Artisan,laila.el idrissi@gmail.com
+Youssef,Chouiter,Casablanca,+212 661105776,Artisan,youssef.chouiter@gmail.com
+Said,Benchekroun,Casablanca,+212 666858025,Artisan,said.benchekroun@gmail.com
+Aziz,Boussoufi,Casablanca,+212 638167545,Artisan,aziz.boussoufi@gmail.com
+Nouhaila,Idrissi,Casablanca,+212 622377548,Artisan,nouhaila.idrissi@gmail.com
+Asma,Kharbach,Casablanca,+212 621476710,Artisan,asma.kharbach@gmail.com
+Youssef,Lahlou,Casablanca,+212 615801089,Artisan,youssef.lahlou@gmail.com
+Brahim,Zouhair,Casablanca,+212 640483723,Artisan,brahim.zouhair@gmail.com
+Othman,Ait Ziane,Casablanca,+212 653413826,Artisan,othman.ait ziane@gmail.com
+Walid,Triki,Casablanca,+212 639177713,Artisan,walid.triki@gmail.com
+Badr,El Ouadi,Casablanca,+212 667556272,Artisan,badr.el ouadi@gmail.com
+Kamal,Ayadi,Casablanca,+212 663735636,Artisan,kamal.ayadi@gmail.com
+Jalal,Laabid,Casablanca,+212 641857070,Artisan,jalal.laabid@gmail.com
+Rami,Boudraa,Casablanca,+212 691529531,Artisan,rami.boudraa@gmail.com
+Ghizlane,Boulaich,Casablanca,+212 634831934,Artisan,ghizlane.boulaich@gmail.com
+Malak,Berrada,Casablanca,+212 691712744,Artisan,malak.berrada@gmail.com
+Riham,Achour,Casablanca,+212 652579481,Artisan,riham.achour@gmail.com
+Lina,El Fassi,Casablanca,+212 698197339,Artisan,lina.el fassi@gmail.com
+Sara,El Yacoubi,Casablanca,+212 634735914,Artisan,sara.el yacoubi@gmail.com
+Loubna,Benjelloun,Casablanca,+212 657775282,Artisan,loubna.benjelloun@gmail.com
+Rania,El Moutawakel,Casablanca,+212 611957843,Artisan,rania.el moutawakel@gmail.com
+Mounia,Ouaaziz,Casablanca,+212 669977119,Artisan,mounia.ouaaziz@gmail.com
+Ihssane,Hassani,Casablanca,+212 653790001,Artisan,ihssane.hassani@gmail.com
+Yassmine,Mechergui,Casablanca,+212 680709436,Artisan,yassmine.mechergui@gmail.com
+Adil,El Bakkali,Casablanca,+212 696810913,Artisan,adil.el bakkali@gmail.com
+Ismail,Rhouma,Casablanca,+212 625475164,Artisan,ismail.rhouma@gmail.com
+Abdelrahman,Khazri,Casablanca,+212 625466358,Artisan,abdelrahman.khazri@gmail.com
+Khalil,El Hajjaji,Casablanca,+212 613820019,Artisan,khalil.el hajjaji@gmail.com
+Khalid,Boukhari,Casablanca,+212 621311679,Artisan,khalid.boukhari@gmail.com
+Amine,Laarej,Casablanca,+212 680280009,Artisan,amine.laarej@gmail.com
+Mouad,Benjeddou,Casablanca,+212 674669616,Artisan,mouad.benjeddou@gmail.com
+Mustapha,Boudlal,Casablanca,+212 680803398,Artisan,mustapha.boudlal@gmail.com
+Sami,Naciri,Casablanca,+212 621103350,Artisan,sami.naciri@gmail.com
+Nour,Ouedraogo,Casablanca,+212 627711152,Artisan,nour.ouedraogo@gmail.com
+Hassan,Assoumani,Casablanca,+212 689592027,Artisan,hassan.assoumani@gmail.com
+Imane,Chikh,Casablanca,+212 692821359,Artisan,imane.chikh@gmail.com
+Rachida,Idrissi,Casablanca,+212 688209836,Artisan,rachida.idrissi@gmail.com
+Yasmina,Koudia,Casablanca,+212 664627813,Artisan,yasmina.koudia@gmail.com
+Samira,Rahhali,Casablanca,+212 684550039,Artisan,samira.rahhali@gmail.com
+Amira,Mannai,Casablanca,+212 676681760,Artisan,amira.mannai@gmail.com
+Bouchra,Belkassem,Casablanca,+212 629103026,Artisan,bouchra.belkassem@gmail.com
+Azzedine,Al Bouchouari,Casablanca,+212 671829432,Artisan,azzedine.al bouchouari@gmail.com
+Oussama,Akhrif,Casablanca,+212 665716044,Artisan,oussama.akhrif@gmail.com
+Hicham,Ghazal,Casablanca,+212 654282426,Artisan,hicham.ghazal@gmail.com
+Naima,Zafri,Casablanca,+212 689794938,Artisan,naima.zafri@gmail.com
+Saida,Boujlida,Casablanca,+212 663341159,Artisan,saida.boujlida@gmail.com
+Mounir,Benslama,Casablanca,+212 619190925,Artisan,mounir.benslama@gmail.com
+Rafik,Harit,Casablanca,+212 688275892,Artisan,rafik.harit@gmail.com
+Yassir,Mouhib,Casablanca,+212 615935426,Artisan,yassir.mouhib@gmail.com
+Leila,Tahiri,Casablanca,+212 682223324,Artisan,leila.tahiri@gmail.com
+Mouad,Rhimou,Casablanca,+212 695340548,Artisan,mouad.rhimou@gmail.com
+Jihane,Messaoud,Casablanca,+212 668839559,Artisan,jihane.messaoud@gmail.com
+Khalil,El Fergui,Casablanca,+212 669219951,Artisan,khalil.el fergui@gmail.com
+Anas,Zitouni,Casablanca,+212 616952859,Artisan,anas.zitouni@gmail.com
+Kamal,Ait Hamouda,Casablanca,+212 633119468,Artisan,kamal.ait hamouda@gmail.com
+Abderrahim,Fathi,Casablanca,+212 643529520,Artisan,abderrahim.fathi@gmail.com
+Brahim,El Hayani,Casablanca,+212 620434397,Artisan,brahim.el hayani@gmail.com
+Sidi,Jarmouni,Casablanca,+212 698472147,Artisan,sidi.jarmouni@gmail.com
+Mouhammad,Bouchoucha,Casablanca,+212 655711243,Artisan,mouhammad.bouchoucha@gmail.com
+Hassan,Sadiq,Casablanca,+212 670979911,Artisan,hassan.sadiq@gmail.com
+Mohamed,Cherkaoui,Casablanca,+212 625687025,Artisan,mohamed.cherkaoui@gmail.com
+Badr,Agoulmine,Casablanca,+212 666449560,Artisan,badr.agoulmine@gmail.com
+Omar,Boujida,Casablanca,+212 671827639,Artisan,omar.boujida@gmail.com
+Saber,El Choubat,Casablanca,+212 667529628,Artisan,saber.el choubat@gmail.com
+Adil,Rahhal,Casablanca,+212 666484730,Artisan,adil.rahhal@gmail.com
+Anwar,Miri,Casablanca,+212 682081550,Artisan,anwar.miri@gmail.com
+Mounia,Faddoul,Casablanca,+212 646719531,Artisan,mounia.faddoul@gmail.com
+Kawtar,Harkat,Casablanca,+212 647681149,Artisan,kawtar.harkat@gmail.com
+Yassine,Kadiri,Casablanca,+212 610922060,Artisan,yassine.kadiri@gmail.com
+Souad,El Farissi,Casablanca,+212 614938258,Artisan,souad.el farissi@gmail.com
+Rachid,Bouhari,Casablanca,+212 631601975,Artisan,rachid.bouhari@gmail.com
+Omar,Oukbani,Casablanca,+212 677602192,Artisan,omar.oukbani@gmail.com
+Mohamed,Saoudi,Casablanca,+212 624027178,Artisan,mohamed.saoudi@gmail.com
+Ahmed,Rafik,Casablanca,+212 654064678,Artisan,ahmed.rafik@gmail.com
+Yassine,Jadidi,Casablanca,+212 665922004,Artisan,yassine.jadidi@gmail.com
+Salma,Mansouri,Casablanca,+212 663938131,Artisan,salma.mansouri@gmail.com
+Fatima,Zidi,Casablanca,+212 637880366,Artisan,fatima.zidi@gmail.com
+Aicha,Ouaziz,Casablanca,+212 611141233,Artisan,aicha.ouaziz@gmail.com
+Soukaina,Amrani,Casablanca,+212 645368547,Artisan,soukaina.amrani@gmail.com
+Zineb,Alami,Casablanca,+212 650311389,Artisan,zineb.alami@gmail.com
+Imane,Mazouzi,Casablanca,+212 637850885,Artisan,imane.mazouzi@gmail.com
+Hanane,Messaoud,Casablanca,+212 632795857,Artisan,hanane.messaoud@gmail.com
+Laila,Chadli,Casablanca,+212 685690369,Artisan,laila.chadli@gmail.com
+Samira,Hajji,Casablanca,+212 687932799,Artisan,samira.hajji@gmail.com
+Meryem,Jilani,Casablanca,+212 682505973,Artisan,meryem.jilani@gmail.com
+Nadia,Bouchareb,Casablanca,+212 661405429,Artisan,nadia.bouchareb@gmail.com
+Khadija,Azouzout,Casablanca,+212 632034319,Artisan,khadija.azouzout@gmail.com
+Zohra,Bouayadi,Casablanca,+212 628106957,Artisan,zohra.bouayadi@gmail.com
+Rania,Nassiri,Casablanca,+212 694902287,Artisan,rania.nassiri@gmail.com
+Mouna,Bentahar,Casablanca,+212 619879912,Artisan,mouna.bentahar@gmail.com
+Amina,El Amrani,Casablanca,+212 620090315,Artisan,amina.el amrani@gmail.com
+Aymen,El Bouzidi,Casablanca,+212 619326661,Artisan,aymen.el bouzidi@gmail.com
+Laila,Benali,Casablanca,+212 642200795,Artisan,laila.benali@gmail.com
+Youssef,Meskini,Casablanca,+212 650680277,Artisan,youssef.meskini@gmail.com
+Said,Mouline,Casablanca,+212 686259295,Artisan,said.mouline@gmail.com
+Aziz,Haddad,Casablanca,+212 642488147,Artisan,aziz.haddad@gmail.com
+Nouhaila,El Fassi,Casablanca,+212 637846315,Artisan,nouhaila.el fassi@gmail.com
+Asma,Ait Ali,Casablanca,+212 650933505,Artisan,asma.ait ali@gmail.com
+Youssef,Rachidi,Casablanca,+212 661393690,Artisan,youssef.rachidi@gmail.com
+Brahim,Berrada,Casablanca,+212 692592138,Artisan,brahim.berrada@gmail.com
+Othman,Boulahfa,Casablanca,+212 688196625,Artisan,othman.boulahfa@gmail.com
+Walid,Mouh,Casablanca,+212 662041948,Artisan,walid.mouh@gmail.com
+Badr,Abada,Casablanca,+212 613083917,Artisan,badr.abada@gmail.com
+Kamal,Jabari,Casablanca,+212 697275990,Artisan,kamal.jabari@gmail.com
+Jalal,Taleb,Casablanca,+212 680915892,Artisan,jalal.taleb@gmail.com
+Rami,Amrani,Casablanca,+212 687606795,Artisan,rami.amrani@gmail.com
+Ghizlane,Khachani,Casablanca,+212 630470746,Artisan,ghizlane.khachani@gmail.com
+Malak,El Majdoub,Casablanca,+212 652519303,Artisan,malak.el majdoub@gmail.com
+Riham,Rahmouni,Casablanca,+212 635873622,Artisan,riham.rahmouni@gmail.com
+Lina,Amin,Casablanca,+212 639160315,Artisan,lina.amin@gmail.com
+Sara,Mahfoud,Casablanca,+212 657023910,Artisan,sara.mahfoud@gmail.com
+Loubna,Sadiqi,Casablanca,+212 679761717,Artisan,loubna.sadiqi@gmail.com
+Rania,Dkhissi,Casablanca,+212 672448048,Artisan,rania.dkhissi@gmail.com
+Mounia,Zitoune,Casablanca,+212 670711555,Artisan,mounia.zitoune@gmail.com
+Ihssane,Fadili,Casablanca,+212 660856341,Artisan,ihssane.fadili@gmail.com
+Yassmine,Hachani,Casablanca,+212 638724924,Artisan,yassmine.hachani@gmail.com
+Adil,El Hachimi,Casablanca,+212 617484861,Artisan,adil.el hachimi@gmail.com
+Ismail,Boudach,Casablanca,+212 696016755,Artisan,ismail.boudach@gmail.com
+Abdelrahman,Alami,Casablanca,+212 645557847,Artisan,abdelrahman.alami@gmail.com
+Khalil,El Idrissi,Casablanca,+212 671969834,Artisan,khalil.el idrissi@gmail.com
+Khalid,Chouiter,Casablanca,+212 661535046,Artisan,khalid.chouiter@gmail.com
+Amine,Benchekroun,Casablanca,+212 619167374,Artisan,amine.benchekroun@gmail.com
+Mouad,Boussoufi,Casablanca,+212 665691722,Artisan,mouad.boussoufi@gmail.com
+Mustapha,Idrissi,Casablanca,+212 671851813,Artisan,mustapha.idrissi@gmail.com
+Sami,Kharbach,Casablanca,+212 631675450,Artisan,sami.kharbach@gmail.com
+Nour,Lahlou,Casablanca,+212 699120509,Artisan,nour.lahlou@gmail.com
+Hassan,Zouhair,Casablanca,+212 696722153,Artisan,hassan.zouhair@gmail.com
+Imane,Ait Ziane,Casablanca,+212 619288014,Artisan,imane.ait ziane@gmail.com
+Rachida,Triki,Casablanca,+212 620809263,Artisan,rachida.triki@gmail.com
+Yasmina,El Ouadi,Casablanca,+212 645533902,Artisan,yasmina.el ouadi@gmail.com
+Samira,Ayadi,Casablanca,+212 622160248,Artisan,samira.ayadi@gmail.com
+Amira,Laabid,Casablanca,+212 699057020,Artisan,amira.laabid@gmail.com
+Bouchra,Boudraa,Casablanca,+212 667840332,Artisan,bouchra.boudraa@gmail.com
+Azzedine,Boulaich,Casablanca,+212 671075015,Artisan,azzedine.boulaich@gmail.com
+Oussama,Berrada,Casablanca,+212 637396082,Artisan,oussama.berrada@gmail.com
+Hicham,Achour,Casablanca,+212 623214959,Artisan,hicham.achour@gmail.com
+Naima,El Fassi,Casablanca,+212 632881358,Artisan,naima.el fassi@gmail.com
+Saida,El Yacoubi,Casablanca,+212 614350229,Artisan,saida.el yacoubi@gmail.com
+Mounir,Benjelloun,Casablanca,+212 696101490,Artisan,mounir.benjelloun@gmail.com
+Rafik,El Moutawakel,Casablanca,+212 634986970,Artisan,rafik.el moutawakel@gmail.com
+Yassir,Ouaaziz,Casablanca,+212 695958131,Artisan,yassir.ouaaziz@gmail.com
+Leila,Hassani,Casablanca,+212 613122938,Artisan,leila.hassani@gmail.com
+Mouad,Mechergui,Casablanca,+212 613789456,Artisan,mouad.mechergui@gmail.com
+Jihane,El Bakkali,Casablanca,+212 613431030,Artisan,jihane.el bakkali@gmail.com
+Khalil,Rhouma,Casablanca,+212 690686832,Artisan,khalil.rhouma@gmail.com
+Anas,Khazri,Casablanca,+212 615550093,Artisan,anas.khazri@gmail.com
+Kamal,El Hajjaji,Casablanca,+212 696105664,Artisan,kamal.el hajjaji@gmail.com
+Abderrahim,Boukhari,Casablanca,+212 650580895,Artisan,abderrahim.boukhari@gmail.com
+Brahim,Laarej,Casablanca,+212 615996782,Artisan,brahim.laarej@gmail.com
+Sidi,Benjeddou,Casablanca,+212 669826274,Artisan,sidi.benjeddou@gmail.com
+Mouhammad,Boudlal,Casablanca,+212 682794611,Artisan,mouhammad.boudlal@gmail.com
+Hassan,Naciri,Casablanca,+212 684751950,Artisan,hassan.naciri@gmail.com
+Mohamed,Ouedraogo,Casablanca,+212 699227812,Artisan,mohamed.ouedraogo@gmail.com
+Badr,Assoumani,Casablanca,+212 669369263,Artisan,badr.assoumani@gmail.com
+Omar,Chikh,Casablanca,+212 618373988,Artisan,omar.chikh@gmail.com
+Saber,Idrissi,Casablanca,+212 647132676,Artisan,saber.idrissi@gmail.com
+Adil,Koudia,Casablanca,+212 624217060,Artisan,adil.koudia@gmail.com
+Anwar,Rahhali,Casablanca,+212 624291448,Artisan,anwar.rahhali@gmail.com
+Mounia,Mannai,Casablanca,+212 652514366,Artisan,mounia.mannai@gmail.com
+Kawtar,Belkassem,Casablanca,+212 649579995,Artisan,kawtar.belkassem@gmail.com
+Yassine,Al Bouchouari,Casablanca,+212 676995238,Artisan,yassine.al bouchouari@gmail.com
+Souad,Akhrif,Casablanca,+212 616832854,Artisan,souad.akhrif@gmail.com
+Rachid,Ghazal,Casablanca,+212 696399004,Artisan,rachid.ghazal@gmail.com
+Omar,Zafri,Casablanca,+212 649495282,Artisan,omar.zafri@gmail.com
+Mohamed,Boujlida,Casablanca,+212 615282599,Artisan,mohamed.boujlida@gmail.com
+Ahmed,Benslama,Casablanca,+212 635879446,Artisan,ahmed.benslama@gmail.com
+Yassine,Harit,Casablanca,+212 653982163,Artisan,yassine.harit@gmail.com
+Salma,Mouhib,Casablanca,+212 611554144,Artisan,salma.mouhib@gmail.com
+Fatima,Tahiri,Casablanca,+212 677649041,Artisan,fatima.tahiri@gmail.com
+Aicha,Rhimou,Casablanca,+212 655794061,Artisan,aicha.rhimou@gmail.com
+Soukaina,Messaoud,Casablanca,+212 684270273,Artisan,soukaina.messaoud@gmail.com
+Zineb,El Fergui,Casablanca,+212 650047508,Artisan,zineb.el fergui@gmail.com
+Imane,Zitouni,Casablanca,+212 693245183,Artisan,imane.zitouni@gmail.com
+Hanane,Ait Hamouda,Casablanca,+212 697572800,Artisan,hanane.ait hamouda@gmail.com
+Laila,Fathi,Casablanca,+212 651923334,Artisan,laila.fathi@gmail.com
+Samira,El Hayani,Casablanca,+212 649363266,Artisan,samira.el hayani@gmail.com
+Meryem,Jarmouni,Casablanca,+212 635153117,Artisan,meryem.jarmouni@gmail.com
+Nadia,Bouchoucha,Casablanca,+212 656690396,Artisan,nadia.bouchoucha@gmail.com
+Khadija,Sadiq,Casablanca,+212 693252057,Artisan,khadija.sadiq@gmail.com
+Zohra,Cherkaoui,Casablanca,+212 665879618,Artisan,zohra.cherkaoui@gmail.com
+Rania,Agoulmine,Casablanca,+212 634066150,Artisan,rania.agoulmine@gmail.com
+Mouna,Boujida,Casablanca,+212 658850042,Artisan,mouna.boujida@gmail.com
+Amina,El Choubat,Casablanca,+212 682269627,Artisan,amina.el choubat@gmail.com
+Aymen,Rahhal,Casablanca,+212 616037840,Artisan,aymen.rahhal@gmail.com
+Laila,Miri,Casablanca,+212 684341549,Artisan,laila.miri@gmail.com
+Youssef,Faddoul,Casablanca,+212 670523906,Artisan,youssef.faddoul@gmail.com
+Said,Harkat,Casablanca,+212 676130619,Artisan,said.harkat@gmail.com
+Aziz,Kadiri,Casablanca,+212 660827049,Artisan,aziz.kadiri@gmail.com
+Nouhaila,El Farissi,Casablanca,+212 648232774,Artisan,nouhaila.el farissi@gmail.com
+Asma,Bouhari,Casablanca,+212 647587953,Artisan,asma.bouhari@gmail.com
+Youssef,Oukbani,Casablanca,+212 649280799,Artisan,youssef.oukbani@gmail.com
+Brahim,Saoudi,Casablanca,+212 675111567,Artisan,brahim.saoudi@gmail.com
+Othman,Rafik,Casablanca,+212 658218790,Artisan,othman.rafik@gmail.com
+Walid,Jadidi,Casablanca,+212 681187475,Artisan,walid.jadidi@gmail.com
+Badr,Mansouri,Casablanca,+212 676898881,Artisan,badr.mansouri@gmail.com
+Kamal,Zidi,Casablanca,+212 688642883,Artisan,kamal.zidi@gmail.com
+Jalal,Ouaziz,Casablanca,+212 636704962,Artisan,jalal.ouaziz@gmail.com
+Rami,Amrani,Casablanca,+212 670218156,Artisan,rami.amrani@gmail.com
+Ghizlane,Alami,Casablanca,+212 677303473,Artisan,ghizlane.alami@gmail.com
+Malak,Mazouzi,Casablanca,+212 639539747,Artisan,malak.mazouzi@gmail.com
+Riham,Messaoud,Casablanca,+212 619457981,Artisan,riham.messaoud@gmail.com
+Lina,Chadli,Casablanca,+212 665543927,Artisan,lina.chadli@gmail.com
+Sara,Hajji,Casablanca,+212 613693225,Artisan,sara.hajji@gmail.com
+Loubna,Jilani,Casablanca,+212 675400427,Artisan,loubna.jilani@gmail.com
+Rania,Bouchareb,Casablanca,+212 681041208,Artisan,rania.bouchareb@gmail.com
+Mounia,Azouzout,Casablanca,+212 634093713,Artisan,mounia.azouzout@gmail.com
+Ihssane,Bouayadi,Casablanca,+212 652188648,Artisan,ihssane.bouayadi@gmail.com
+Yassmine,Nassiri,Casablanca,+212 618915236,Artisan,yassmine.nassiri@gmail.com
+Adil,Bentahar,Casablanca,+212 630670157,Artisan,adil.bentahar@gmail.com
+Ismail,El Amrani,Casablanca,+212 620069859,Artisan,ismail.el amrani@gmail.com
+Abdelrahman,El Bouzidi,Casablanca,+212 645047324,Artisan,abdelrahman.el bouzidi@gmail.com
+Khalil,Benali,Casablanca,+212 651498385,Artisan,khalil.benali@gmail.com
+Khalid,Meskini,Casablanca,+212 635839706,Artisan,khalid.meskini@gmail.com
+Amine,Mouline,Casablanca,+212 657117466,Artisan,amine.mouline@gmail.com
+Mouad,Haddad,Casablanca,+212 616362023,Artisan,mouad.haddad@gmail.com
+Mustapha,El Fassi,Casablanca,+212 642500519,Artisan,mustapha.el fassi@gmail.com
+Sami,Ait Ali,Casablanca,+212 611006743,Artisan,sami.ait ali@gmail.com
+Nour,Rachidi,Casablanca,+212 693433117,Artisan,nour.rachidi@gmail.com
+Hassan,Berrada,Casablanca,+212 688413961,Artisan,hassan.berrada@gmail.com
+Imane,Boulahfa,Casablanca,+212 678032426,Artisan,imane.boulahfa@gmail.com
+Rachida,Mouh,Casablanca,+212 647539145,Artisan,rachida.mouh@gmail.com
+Yasmina,Abada,Casablanca,+212 655515176,Artisan,yasmina.abada@gmail.com
+Samira,Jabari,Casablanca,+212 677751129,Artisan,samira.jabari@gmail.com
+Amira,Taleb,Casablanca,+212 629014097,Artisan,amira.taleb@gmail.com
+Bouchra,Amrani,Casablanca,+212 627089954,Artisan,bouchra.amrani@gmail.com
+Azzedine,Khachani,Casablanca,+212 681212414,Artisan,azzedine.khachani@gmail.com
+Oussama,El Majdoub,Casablanca,+212 680982176,Artisan,oussama.el majdoub@gmail.com
+Hicham,Rahmouni,Casablanca,+212 668617677,Artisan,hicham.rahmouni@gmail.com
+Naima,Amin,Casablanca,+212 668034356,Artisan,naima.amin@gmail.com
+Saida,Mahfoud,Casablanca,+212 615640709,Artisan,saida.mahfoud@gmail.com
+Mounir,Sadiqi,Casablanca,+212 658950935,Artisan,mounir.sadiqi@gmail.com
+Rafik,Dkhissi,Casablanca,+212 662203971,Artisan,rafik.dkhissi@gmail.com
+Yassir,Zitoune,Casablanca,+212 616665106,Artisan,yassir.zitoune@gmail.com
+Leila,Fadili,Casablanca,+212 635157959,Artisan,leila.fadili@gmail.com
+Mouad,Hachani,Casablanca,+212 682219556,Artisan,mouad.hachani@gmail.com
+Jihane,El Hachimi,Casablanca,+212 666653969,Artisan,jihane.el hachimi@gmail.com
+Khalil,Boudach,Casablanca,+212 658485868,Artisan,khalil.boudach@gmail.com
+Anas,Alami,Casablanca,+212 663963454,Artisan,anas.alami@gmail.com
+Kamal,El Idrissi,Casablanca,+212 692613441,Artisan,kamal.el idrissi@gmail.com
+Abderrahim,Chouiter,Casablanca,+212 695356437,Artisan,abderrahim.chouiter@gmail.com
+Brahim,Benchekroun,Casablanca,+212 618940197,Artisan,brahim.benchekroun@gmail.com
+Sidi,Boussoufi,Casablanca,+212 620294010,Artisan,sidi.boussoufi@gmail.com
+Mouhammad,Idrissi,Casablanca,+212 672068639,Artisan,mouhammad.idrissi@gmail.com
+Hassan,Kharbach,Casablanca,+212 655242755,Artisan,hassan.kharbach@gmail.com
+Mohamed,Lahlou,Casablanca,+212 658514675,Artisan,mohamed.lahlou@gmail.com
+Badr,Zouhair,Casablanca,+212 687159325,Artisan,badr.zouhair@gmail.com
+Omar,Ait Ziane,Casablanca,+212 660992171,Artisan,omar.ait ziane@gmail.com
+Saber,Triki,Casablanca,+212 660130365,Artisan,saber.triki@gmail.com
+Adil,El Ouadi,Casablanca,+212 669180166,Artisan,adil.el ouadi@gmail.com
+Anwar,Ayadi,Casablanca,+212 674811202,Artisan,anwar.ayadi@gmail.com
+Mounia,Laabid,Casablanca,+212 647813871,Artisan,mounia.laabid@gmail.com
+Kawtar,Boudraa,Casablanca,+212 695339808,Artisan,kawtar.boudraa@gmail.com
+Yassine,Boulaich,Casablanca,+212 616906900,Artisan,yassine.boulaich@gmail.com
+Souad,Berrada,Casablanca,+212 672630128,Artisan,souad.berrada@gmail.com
+Rachid,Achour,Casablanca,+212 653804111,Artisan,rachid.achour@gmail.com
+Omar,El Fassi,Casablanca,+212 668821312,Artisan,omar.el fassi@gmail.com
+Mohamed,El Yacoubi,Casablanca,+212 640968432,Artisan,mohamed.el yacoubi@gmail.com
+Ahmed,Benjelloun,Casablanca,+212 632587652,Artisan,ahmed.benjelloun@gmail.com
+Yassine,El Moutawakel,Casablanca,+212 653381650,Artisan,yassine.el moutawakel@gmail.com
+Salma,Ouaaziz,Casablanca,+212 646417588,Artisan,salma.ouaaziz@gmail.com
+Fatima,Hassani,Casablanca,+212 614951636,Artisan,fatima.hassani@gmail.com
+Aicha,Mechergui,Casablanca,+212 676326330,Artisan,aicha.mechergui@gmail.com
+Soukaina,El Bakkali,Casablanca,+212 661282936,Artisan,soukaina.el bakkali@gmail.com
+Zineb,Rhouma,Casablanca,+212 621265237,Artisan,zineb.rhouma@gmail.com
+Imane,Khazri,Casablanca,+212 616906579,Artisan,imane.khazri@gmail.com
+Hanane,El Hajjaji,Casablanca,+212 660786947,Artisan,hanane.el hajjaji@gmail.com
+Laila,Boukhari,Casablanca,+212 683249320,Artisan,laila.boukhari@gmail.com
+Samira,Laarej,Casablanca,+212 686838978,Artisan,samira.laarej@gmail.com
+Meryem,Benjeddou,Casablanca,+212 648728218,Artisan,meryem.benjeddou@gmail.com
+Nadia,Boudlal,Casablanca,+212 685926268,Artisan,nadia.boudlal@gmail.com
+Khadija,Naciri,Casablanca,+212 687915514,Artisan,khadija.naciri@gmail.com
+Zohra,Ouedraogo,Casablanca,+212 633145048,Artisan,zohra.ouedraogo@gmail.com
+Rania,Assoumani,Casablanca,+212 620544923,Artisan,rania.assoumani@gmail.com
+Mouna,Chikh,Casablanca,+212 631922897,Artisan,mouna.chikh@gmail.com
+Amina,Idrissi,Casablanca,+212 638733153,Artisan,amina.idrissi@gmail.com
+Aymen,Koudia,Casablanca,+212 665603679,Artisan,aymen.koudia@gmail.com
+Laila,Rahhali,Casablanca,+212 668065697,Artisan,laila.rahhali@gmail.com
+Youssef,Mannai,Casablanca,+212 619450072,Artisan,youssef.mannai@gmail.com
+Said,Belkassem,Casablanca,+212 610620111,Artisan,said.belkassem@gmail.com
+Aziz,Al Bouchouari,Casablanca,+212 611850634,Artisan,aziz.al bouchouari@gmail.com
+Nouhaila,Akhrif,Casablanca,+212 696812962,Artisan,nouhaila.akhrif@gmail.com
+Asma,Ghazal,Casablanca,+212 622581668,Artisan,asma.ghazal@gmail.com
+Youssef,Zafri,Casablanca,+212 697559704,Artisan,youssef.zafri@gmail.com
+Brahim,Boujlida,Casablanca,+212 624462619,Artisan,brahim.boujlida@gmail.com
+Othman,Benslama,Casablanca,+212 651557223,Artisan,othman.benslama@gmail.com
+Walid,Harit,Casablanca,+212 640027335,Artisan,walid.harit@gmail.com
+Badr,Mouhib,Casablanca,+212 669912205,Artisan,badr.mouhib@gmail.com
+Kamal,Tahiri,Casablanca,+212 654113635,Artisan,kamal.tahiri@gmail.com
+Jalal,Rhimou,Casablanca,+212 621224328,Artisan,jalal.rhimou@gmail.com
+Rami,Messaoud,Casablanca,+212 635778594,Artisan,rami.messaoud@gmail.com
+Ghizlane,El Fergui,Casablanca,+212 669063892,Artisan,ghizlane.el fergui@gmail.com
+Malak,Zitouni,Casablanca,+212 684001688,Artisan,malak.zitouni@gmail.com
+Riham,Ait Hamouda,Casablanca,+212 668240884,Artisan,riham.ait hamouda@gmail.com
+Lina,Fathi,Casablanca,+212 623003763,Artisan,lina.fathi@gmail.com
+Sara,El Hayani,Casablanca,+212 658373607,Artisan,sara.el hayani@gmail.com
+Loubna,Jarmouni,Casablanca,+212 666043266,Artisan,loubna.jarmouni@gmail.com
+Rania,Bouchoucha,Casablanca,+212 666383017,Artisan,rania.bouchoucha@gmail.com
+Mounia,Sadiq,Casablanca,+212 627968122,Artisan,mounia.sadiq@gmail.com
+Ihssane,Cherkaoui,Casablanca,+212 622150458,Artisan,ihssane.cherkaoui@gmail.com
+Yassmine,Agoulmine,Casablanca,+212 692641196,Artisan,yassmine.agoulmine@gmail.com
+Adil,Boujida,Casablanca,+212 671999909,Artisan,adil.boujida@gmail.com
+Ismail,El Choubat,Casablanca,+212 657350577,Artisan,ismail.el choubat@gmail.com
+Abdelrahman,Rahhal,Casablanca,+212 612892179,Artisan,abdelrahman.rahhal@gmail.com
+Khalil,Miri,Casablanca,+212 670797351,Artisan,khalil.miri@gmail.com
+Khalid,Faddoul,Casablanca,+212 614428305,Artisan,khalid.faddoul@gmail.com
+Amine,Harkat,Casablanca,+212 630701714,Artisan,amine.harkat@gmail.com
+Mouad,Kadiri,Casablanca,+212 679040032,Artisan,mouad.kadiri@gmail.com
+Mustapha,El Farissi,Casablanca,+212 694917053,Artisan,mustapha.el farissi@gmail.com
+Sami,Bouhari,Casablanca,+212 635290861,Artisan,sami.bouhari@gmail.com
+Nour,Oukbani,Casablanca,+212 645102528,Artisan,nour.oukbani@gmail.com
+Hassan,Saoudi,Casablanca,+212 647367489,Artisan,hassan.saoudi@gmail.com
+Imane,Rafik,Casablanca,+212 639466791,Artisan,imane.rafik@gmail.com
+Rachida,Jadidi,Casablanca,+212 652405028,Artisan,rachida.jadidi@gmail.com
+Yasmina,Mansouri,Casablanca,+212 641532843,Artisan,yasmina.mansouri@gmail.com
+Samira,Zidi,Casablanca,+212 621689083,Artisan,samira.zidi@gmail.com
+Amira,Ouaziz,Casablanca,+212 645431968,Artisan,amira.ouaziz@gmail.com
+Bouchra,Amrani,Casablanca,+212 634482459,Artisan,bouchra.amrani@gmail.com
+Azzedine,Alami,Casablanca,+212 615602763,Artisan,azzedine.alami@gmail.com
+Oussama,Mazouzi,Casablanca,+212 653471407,Artisan,oussama.mazouzi@gmail.com
+Hicham,Messaoud,Casablanca,+212 674331882,Artisan,hicham.messaoud@gmail.com
+Naima,Chadli,Casablanca,+212 688878114,Artisan,naima.chadli@gmail.com
+Saida,Hajji,Casablanca,+212 688154866,Artisan,saida.hajji@gmail.com
+Mounir,Jilani,Casablanca,+212 636520432,Artisan,mounir.jilani@gmail.com
+Rafik,Bouchareb,Casablanca,+212 688574964,Artisan,rafik.bouchareb@gmail.com
+Yassir,Azouzout,Casablanca,+212 618846801,Artisan,yassir.azouzout@gmail.com
+Leila,Bouayadi,Casablanca,+212 612261285,Artisan,leila.bouayadi@gmail.com
+Mouad,Nassiri,Casablanca,+212 658487436,Artisan,mouad.nassiri@gmail.com
+Jihane,Bentahar,Casablanca,+212 681973982,Artisan,jihane.bentahar@gmail.com
+Khalil,El Amrani,Casablanca,+212 677027157,Artisan,khalil.el amrani@gmail.com
+Anas,El Bouzidi,Casablanca,+212 664227748,Artisan,anas.el bouzidi@gmail.com
+Kamal,Benali,Casablanca,+212 651394091,Artisan,kamal.benali@gmail.com
+Abderrahim,Meskini,Casablanca,+212 698391108,Artisan,abderrahim.meskini@gmail.com
+Brahim,Mouline,Casablanca,+212 689935284,Artisan,brahim.mouline@gmail.com
+Sidi,Haddad,Casablanca,+212 674596370,Artisan,sidi.haddad@gmail.com
+Mouhammad,El Fassi,Casablanca,+212 676011740,Artisan,mouhammad.el fassi@gmail.com
+Hassan,Ait Ali,Casablanca,+212 646074827,Artisan,hassan.ait ali@gmail.com
+Mohamed,Rachidi,Casablanca,+212 670479122,Artisan,mohamed.rachidi@gmail.com
+Badr,Berrada,Casablanca,+212 655214148,Artisan,badr.berrada@gmail.com
+Omar,Boulahfa,Casablanca,+212 666031475,Artisan,omar.boulahfa@gmail.com
+Saber,Mouh,Casablanca,+212 637156632,Artisan,saber.mouh@gmail.com
+Adil,Abada,Casablanca,+212 676997792,Artisan,adil.abada@gmail.com
+Anwar,Jabari,Casablanca,+212 614590571,Artisan,anwar.jabari@gmail.com
+Mounia,Taleb,Casablanca,+212 633955267,Artisan,mounia.taleb@gmail.com
+Kawtar,Amrani,Casablanca,+212 643258789,Artisan,kawtar.amrani@gmail.com
+Yassine,Khachani,Casablanca,+212 644461406,Artisan,yassine.khachani@gmail.com
+Souad,El Majdoub,Casablanca,+212 661702140,Artisan,souad.el majdoub@gmail.com
+Rachid,Rahmouni,Casablanca,+212 688361359,Artisan,rachid.rahmouni@gmail.com
+Omar,Amin,Casablanca,+212 678924432,Artisan,omar.amin@gmail.com
+Mohamed,Mahfoud,Casablanca,+212 634859333,Artisan,mohamed.mahfoud@gmail.com
+Ahmed,Sadiqi,Casablanca,+212 642174328,Artisan,ahmed.sadiqi@gmail.com
+Yassine,Dkhissi,Casablanca,+212 690064985,Artisan,yassine.dkhissi@gmail.com
+Salma,Zitoune,Casablanca,+212 676973528,Artisan,salma.zitoune@gmail.com
+Fatima,Fadili,Casablanca,+212 627404978,Artisan,fatima.fadili@gmail.com
+Aicha,Hachani,Casablanca,+212 632221056,Artisan,aicha.hachani@gmail.com
+Soukaina,El Hachimi,Casablanca,+212 659437170,Artisan,soukaina.el hachimi@gmail.com
+Zineb,Boudach,Casablanca,+212 642750073,Artisan,zineb.boudach@gmail.com
+Imane,Alami,Casablanca,+212 651456839,Artisan,imane.alami@gmail.com
+Hanane,El Idrissi,Casablanca,+212 673595890,Artisan,hanane.el idrissi@gmail.com
+Laila,Chouiter,Casablanca,+212 630632077,Artisan,laila.chouiter@gmail.com
+Samira,Benchekroun,Casablanca,+212 661319026,Artisan,samira.benchekroun@gmail.com
+Meryem,Boussoufi,Casablanca,+212 650486678,Artisan,meryem.boussoufi@gmail.com
+Nadia,Idrissi,Casablanca,+212 678639095,Artisan,nadia.idrissi@gmail.com
+Khadija,Kharbach,Casablanca,+212 644581954,Artisan,khadija.kharbach@gmail.com
+Zohra,Lahlou,Casablanca,+212 639061442,Artisan,zohra.lahlou@gmail.com
+Rania,Zouhair,Casablanca,+212 658819776,Artisan,rania.zouhair@gmail.com
+Mouna,Ait Ziane,Casablanca,+212 684930898,Artisan,mouna.ait ziane@gmail.com
+Amina,Triki,Casablanca,+212 625586591,Artisan,amina.triki@gmail.com
+Aymen,El Ouadi,Casablanca,+212 699311655,Artisan,aymen.el ouadi@gmail.com
+Laila,Ayadi,Casablanca,+212 610111424,Artisan,laila.ayadi@gmail.com
+Youssef,Laabid,Casablanca,+212 655672242,Artisan,youssef.laabid@gmail.com
+Said,Boudraa,Casablanca,+212 661541975,Artisan,said.boudraa@gmail.com
+Aziz,Boulaich,Casablanca,+212 640328405,Artisan,aziz.boulaich@gmail.com
+Nouhaila,Berrada,Casablanca,+212 666910853,Artisan,nouhaila.berrada@gmail.com
+Asma,Achour,Casablanca,+212 639717834,Artisan,asma.achour@gmail.com
+Youssef,El Fassi,Casablanca,+212 663756921,Artisan,youssef.el fassi@gmail.com
+Brahim,El Yacoubi,Casablanca,+212 685644440,Artisan,brahim.el yacoubi@gmail.com
+Othman,Benjelloun,Casablanca,+212 631113453,Artisan,othman.benjelloun@gmail.com
+Walid,El Moutawakel,Casablanca,+212 681607696,Artisan,walid.el moutawakel@gmail.com
+Badr,Ouaaziz,Casablanca,+212 630646391,Artisan,badr.ouaaziz@gmail.com
+Kamal,Hassani,Casablanca,+212 619996089,Artisan,kamal.hassani@gmail.com
+Jalal,Mechergui,Casablanca,+212 615280718,Artisan,jalal.mechergui@gmail.com
+Rami,El Bakkali,Casablanca,+212 672986961,Artisan,rami.el bakkali@gmail.com
+Ghizlane,Rhouma,Casablanca,+212 637954277,Artisan,ghizlane.rhouma@gmail.com
+Malak,Khazri,Casablanca,+212 638408867,Artisan,malak.khazri@gmail.com
+Riham,El Hajjaji,Casablanca,+212 685677630,Artisan,riham.el hajjaji@gmail.com
+Lina,Boukhari,Casablanca,+212 689157803,Artisan,lina.boukhari@gmail.com
+Sara,Laarej,Casablanca,+212 615003289,Artisan,sara.laarej@gmail.com
+Loubna,Benjeddou,Casablanca,+212 628556472,Artisan,loubna.benjeddou@gmail.com
+Rania,Boudlal,Casablanca,+212 633190937,Artisan,rania.boudlal@gmail.com
+Mounia,Naciri,Casablanca,+212 658559738,Artisan,mounia.naciri@gmail.com
+Ihssane,Ouedraogo,Casablanca,+212 677117097,Artisan,ihssane.ouedraogo@gmail.com
+Yassmine,Assoumani,Casablanca,+212 679207765,Artisan,yassmine.assoumani@gmail.com
+Adil,Chikh,Casablanca,+212 699308848,Artisan,adil.chikh@gmail.com
+Ismail,Idrissi,Casablanca,+212 673492416,Artisan,ismail.idrissi@gmail.com
+Abdelrahman,Koudia,Casablanca,+212 636883677,Artisan,abdelrahman.koudia@gmail.com
+Khalil,Rahhali,Casablanca,+212 647715762,Artisan,khalil.rahhali@gmail.com
+Khalid,Mannai,Casablanca,+212 636371536,Artisan,khalid.mannai@gmail.com
+Amine,Belkassem,Casablanca,+212 641190050,Artisan,amine.belkassem@gmail.com
+Mouad,Al Bouchouari,Casablanca,+212 635496448,Artisan,mouad.al bouchouari@gmail.com
+Mustapha,Akhrif,Casablanca,+212 694795138,Artisan,mustapha.akhrif@gmail.com
+Sami,Ghazal,Casablanca,+212 651452481,Artisan,sami.ghazal@gmail.com
+Nour,Zafri,Casablanca,+212 648136326,Artisan,nour.zafri@gmail.com
+Hassan,Boujlida,Casablanca,+212 656929171,Artisan,hassan.boujlida@gmail.com
+Imane,Benslama,Casablanca,+212 619693014,Artisan,imane.benslama@gmail.com
+Rachida,Harit,Casablanca,+212 631564530,Artisan,rachida.harit@gmail.com
+Yasmina,Mouhib,Casablanca,+212 650124787,Artisan,yasmina.mouhib@gmail.com
+Samira,Tahiri,Casablanca,+212 683064847,Artisan,samira.tahiri@gmail.com
+Amira,Rhimou,Casablanca,+212 640210505,Artisan,amira.rhimou@gmail.com
+Bouchra,Messaoud,Casablanca,+212 658107074,Artisan,bouchra.messaoud@gmail.com
+Azzedine,El Fergui,Casablanca,+212 634831010,Artisan,azzedine.el fergui@gmail.com
+Oussama,Zitouni,Casablanca,+212 620338022,Artisan,oussama.zitouni@gmail.com
+Hicham,Ait Hamouda,Casablanca,+212 614302623,Artisan,hicham.ait hamouda@gmail.com
+Naima,Fathi,Casablanca,+212 619707563,Artisan,naima.fathi@gmail.com
+Saida,El Hayani,Casablanca,+212 680400545,Artisan,saida.el hayani@gmail.com
+Mounir,Jarmouni,Casablanca,+212 689920694,Artisan,mounir.jarmouni@gmail.com
+Rafik,Bouchoucha,Casablanca,+212 691909414,Artisan,rafik.bouchoucha@gmail.com
+Yassir,Sadiq,Casablanca,+212 646127902,Artisan,yassir.sadiq@gmail.com
+Leila,Cherkaoui,Casablanca,+212 639241422,Artisan,leila.cherkaoui@gmail.com
+Mouad,Agoulmine,Casablanca,+212 692590677,Artisan,mouad.agoulmine@gmail.com
+Jihane,Boujida,Casablanca,+212 616079063,Artisan,jihane.boujida@gmail.com
+Khalil,El Choubat,Casablanca,+212 677893864,Artisan,khalil.el choubat@gmail.com
+Anas,Rahhal,Casablanca,+212 648604019,Artisan,anas.rahhal@gmail.com
+Kamal,Miri,Casablanca,+212 695767992,Artisan,kamal.miri@gmail.com
+Abderrahim,Faddoul,Casablanca,+212 614776007,Artisan,abderrahim.faddoul@gmail.com
+Brahim,Harkat,Casablanca,+212 673081353,Artisan,brahim.harkat@gmail.com
+Sidi,Kadiri,Casablanca,+212 688303150,Artisan,sidi.kadiri@gmail.com
+Mouhammad,El Farissi,Casablanca,+212 619259513,Artisan,mouhammad.el farissi@gmail.com
+Hassan,Bouhari,Casablanca,+212 660012207,Artisan,hassan.bouhari@gmail.com
+Mohamed,Oukbani,Casablanca,+212 615598749,Artisan,mohamed.oukbani@gmail.com
+Badr,Saoudi,Casablanca,+212 694314563,Artisan,badr.saoudi@gmail.com
+Omar,Rafik,Casablanca,+212 620048780,Artisan,omar.rafik@gmail.com
+Saber,Jadidi,Casablanca,+212 687503689,Artisan,saber.jadidi@gmail.com
+Adil,Mansouri,Casablanca,+212 627715973,Artisan,adil.mansouri@gmail.com
+Anwar,Zidi,Casablanca,+212 676553961,Artisan,anwar.zidi@gmail.com
+Mounia,Ouaziz,Casablanca,+212 623690399,Artisan,mounia.ouaziz@gmail.com
+Kawtar,Amrani,Casablanca,+212 688798863,Artisan,kawtar.amrani@gmail.com
+Yassine,Alami,Casablanca,+212 684919630,Artisan,yassine.alami@gmail.com
+Souad,Mazouzi,Casablanca,+212 678451173,Artisan,souad.mazouzi@gmail.com
+Rachid,Messaoud,Casablanca,+212 687882352,Artisan,rachid.messaoud@gmail.com
+Omar,Chadli,Casablanca,+212 687790588,Artisan,omar.chadli@gmail.com
+Mohamed,Hajji,Casablanca,+212 651637888,Artisan,mohamed.hajji@gmail.com
+Ahmed,Jilani,Casablanca,+212 672446455,Artisan,ahmed.jilani@gmail.com
+Yassine,Bouchareb,Casablanca,+212 691871161,Artisan,yassine.bouchareb@gmail.com
+Salma,Azouzout,Casablanca,+212 674955055,Artisan,salma.azouzout@gmail.com
+Fatima,Bouayadi,Casablanca,+212 617883902,Artisan,fatima.bouayadi@gmail.com
+Aicha,Nassiri,Casablanca,+212 689658270,Artisan,aicha.nassiri@gmail.com
+Soukaina,Bentahar,Casablanca,+212 641893905,Artisan,soukaina.bentahar@gmail.com
+Zineb,El Amrani,Casablanca,+212 687260289,Artisan,zineb.el amrani@gmail.com
+Imane,El Bouzidi,Casablanca,+212 613157816,Artisan,imane.el bouzidi@gmail.com
+Hanane,Benali,Casablanca,+212 695212195,Artisan,hanane.benali@gmail.com
+Laila,Meskini,Casablanca,+212 611048515,Artisan,laila.meskini@gmail.com
+Samira,Mouline,Casablanca,+212 639882359,Artisan,samira.mouline@gmail.com
+Meryem,Haddad,Casablanca,+212 688040821,Artisan,meryem.haddad@gmail.com
+Nadia,El Fassi,Casablanca,+212 643704682,Artisan,nadia.el fassi@gmail.com
+Khadija,Ait Ali,Casablanca,+212 674743870,Artisan,khadija.ait ali@gmail.com
+Zohra,Rachidi,Casablanca,+212 698200668,Artisan,zohra.rachidi@gmail.com
+Rania,Berrada,Casablanca,+212 627438148,Artisan,rania.berrada@gmail.com
+Mouna,Boulahfa,Casablanca,+212 635319556,Artisan,mouna.boulahfa@gmail.com
+Amina,Mouh,Casablanca,+212 615146130,Artisan,amina.mouh@gmail.com
+Aymen,Abada,Casablanca,+212 634011733,Artisan,aymen.abada@gmail.com
+Laila,Jabari,Casablanca,+212 627814872,Artisan,laila.jabari@gmail.com
+Youssef,Taleb,Casablanca,+212 699361308,Artisan,youssef.taleb@gmail.com
+Said,Amrani,Casablanca,+212 690127211,Artisan,said.amrani@gmail.com
+Aziz,Khachani,Casablanca,+212 647097527,Artisan,aziz.khachani@gmail.com
+Nouhaila,El Majdoub,Casablanca,+212 648288248,Artisan,nouhaila.el majdoub@gmail.com
+Asma,Rahmouni,Casablanca,+212 641657307,Artisan,asma.rahmouni@gmail.com
+Youssef,Amin,Casablanca,+212 635569330,Artisan,youssef.amin@gmail.com
+Brahim,Mahfoud,Casablanca,+212 652657245,Artisan,brahim.mahfoud@gmail.com
+Othman,Sadiqi,Casablanca,+212 695238715,Artisan,othman.sadiqi@gmail.com
+Walid,Dkhissi,Casablanca,+212 646796956,Artisan,walid.dkhissi@gmail.com
+Badr,Zitoune,Casablanca,+212 610014324,Artisan,badr.zitoune@gmail.com
+Kamal,Fadili,Casablanca,+212 686827529,Artisan,kamal.fadili@gmail.com
+Jalal,Hachani,Casablanca,+212 645190824,Artisan,jalal.hachani@gmail.com
+Rami,El Hachimi,Casablanca,+212 670525524,Artisan,rami.el hachimi@gmail.com
+Ghizlane,Boudach,Casablanca,+212 695516557,Artisan,ghizlane.boudach@gmail.com
+Malak,Alami,Casablanca,+212 616729487,Artisan,malak.alami@gmail.com
+Riham,El Idrissi,Casablanca,+212 628639811,Artisan,riham.el idrissi@gmail.com
+Lina,Chouiter,Casablanca,+212 630893456,Artisan,lina.chouiter@gmail.com
+Sara,Benchekroun,Casablanca,+212 614812464,Artisan,sara.benchekroun@gmail.com
+Loubna,Boussoufi,Casablanca,+212 647759715,Artisan,loubna.boussoufi@gmail.com
+Rania,Idrissi,Casablanca,+212 643046626,Artisan,rania.idrissi@gmail.com
+Mounia,Kharbach,Casablanca,+212 621697939,Artisan,mounia.kharbach@gmail.com
+Ihssane,Lahlou,Casablanca,+212 640563931,Artisan,ihssane.lahlou@gmail.com
+Yassmine,Zouhair,Casablanca,+212 684112568,Artisan,yassmine.zouhair@gmail.com
+Adil,Ait Ziane,Casablanca,+212 619203502,Artisan,adil.ait ziane@gmail.com
+Ismail,Triki,Casablanca,+212 685606123,Artisan,ismail.triki@gmail.com
+Abdelrahman,El Ouadi,Casablanca,+212 652392331,Artisan,abdelrahman.el ouadi@gmail.com
+Khalil,Ayadi,Casablanca,+212 669392087,Artisan,khalil.ayadi@gmail.com
+Khalid,Laabid,Casablanca,+212 639585451,Artisan,khalid.laabid@gmail.com
+Amine,Boudraa,Casablanca,+212 690579195,Artisan,amine.boudraa@gmail.com
+Mouad,Boulaich,Casablanca,+212 659917295,Artisan,mouad.boulaich@gmail.com
+Mustapha,Berrada,Casablanca,+212 673511649,Artisan,mustapha.berrada@gmail.com
+Sami,Achour,Casablanca,+212 649946869,Artisan,sami.achour@gmail.com
+Nour,El Fassi,Casablanca,+212 686528592,Artisan,nour.el fassi@gmail.com
+Hassan,El Yacoubi,Casablanca,+212 627475319,Artisan,hassan.el yacoubi@gmail.com
+Imane,Benjelloun,Casablanca,+212 691546367,Artisan,imane.benjelloun@gmail.com
+Rachida,El Moutawakel,Casablanca,+212 625838299,Artisan,rachida.el moutawakel@gmail.com
+Yasmina,Ouaaziz,Casablanca,+212 694981534,Artisan,yasmina.ouaaziz@gmail.com
+Samira,Hassani,Casablanca,+212 621353417,Artisan,samira.hassani@gmail.com
+Amira,Mechergui,Casablanca,+212 616490187,Artisan,amira.mechergui@gmail.com
+Bouchra,El Bakkali,Casablanca,+212 685729807,Artisan,bouchra.el bakkali@gmail.com
+Azzedine,Rhouma,Casablanca,+212 682267015,Artisan,azzedine.rhouma@gmail.com
+Oussama,Khazri,Casablanca,+212 674214589,Artisan,oussama.khazri@gmail.com
+Hicham,El Hajjaji,Casablanca,+212 638588927,Artisan,hicham.el hajjaji@gmail.com
+Naima,Boukhari,Casablanca,+212 653354795,Artisan,naima.boukhari@gmail.com
+Saida,Laarej,Casablanca,+212 690473708,Artisan,saida.laarej@gmail.com
+Mounir,Benjeddou,Casablanca,+212 625336684,Artisan,mounir.benjeddou@gmail.com
+Rafik,Boudlal,Casablanca,+212 621191015,Artisan,rafik.boudlal@gmail.com
+Yassir,Naciri,Casablanca,+212 640084719,Artisan,yassir.naciri@gmail.com
+Leila,Ouedraogo,Casablanca,+212 629916950,Artisan,leila.ouedraogo@gmail.com
+Mouad,Assoumani,Casablanca,+212 632855629,Artisan,mouad.assoumani@gmail.com
+Jihane,Chikh,Casablanca,+212 693229952,Artisan,jihane.chikh@gmail.com
+Khalil,Idrissi,Casablanca,+212 634635794,Artisan,khalil.idrissi@gmail.com
+Anas,Koudia,Casablanca,+212 666162449,Artisan,anas.koudia@gmail.com
+Kamal,Rahhali,Casablanca,+212 668997527,Artisan,kamal.rahhali@gmail.com
+Abderrahim,Mannai,Casablanca,+212 669042496,Artisan,abderrahim.mannai@gmail.com
+Brahim,Belkassem,Casablanca,+212 646787310,Artisan,brahim.belkassem@gmail.com
+Sidi,Al Bouchouari,Casablanca,+212 682877266,Artisan,sidi.al bouchouari@gmail.com
+Mouhammad,Akhrif,Casablanca,+212 655092784,Artisan,mouhammad.akhrif@gmail.com
+Hassan,Ghazal,Casablanca,+212 665097981,Artisan,hassan.ghazal@gmail.com
+Mohamed,Zafri,Casablanca,+212 666848563,Artisan,mohamed.zafri@gmail.com
+Badr,Boujlida,Casablanca,+212 675616348,Artisan,badr.boujlida@gmail.com
+Omar,Benslama,Casablanca,+212 622963207,Artisan,omar.benslama@gmail.com
+Saber,Harit,Casablanca,+212 660143920,Artisan,saber.harit@gmail.com
+Adil,Mouhib,Casablanca,+212 658969436,Artisan,adil.mouhib@gmail.com
+Anwar,Tahiri,Casablanca,+212 677926791,Artisan,anwar.tahiri@gmail.com
+Mounia,Rhimou,Casablanca,+212 696184241,Artisan,mounia.rhimou@gmail.com
+Kawtar,Messaoud,Casablanca,+212 650643759,Artisan,kawtar.messaoud@gmail.com
+Yassine,El Fergui,Casablanca,+212 615263780,Artisan,yassine.el fergui@gmail.com
+Souad,Zitouni,Casablanca,+212 668782770,Artisan,souad.zitouni@gmail.com

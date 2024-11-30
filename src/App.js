@@ -1,23 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AssistantUI from "./AssistantUI";
+import FormPage from "./FormPage";
 
-const ConfirmationPage = () => (
-  <div style={{ textAlign: "center", marginTop: "50px" }}>
-    <h1>Merci pour votre inscription !</h1>
-    <p>Votre formulaire est terminé.</p>
-  </div>
-);
+const App = () => {
+  const [question, setQuestion] = useState("Bienvenue sur Hirafi ! Voulez-vous vous inscrire ?");
 
-function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<AssistantUI />} />
-        <Route path="/confirmation" element={<ConfirmationPage />} />
+        {/* Page principale avec l'assistant */}
+        <Route path="/" element={<AssistantUI question={question} setQuestion={setQuestion} />} />
+        
+        {/* Deuxième page avec le formulaire */}
+        <Route path="/formulaire" element={<FormPage />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
+
+

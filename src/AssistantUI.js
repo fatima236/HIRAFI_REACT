@@ -1,92 +1,155 @@
-import React, { useState } from "react";
-import { TextField, Button, Typography, Container, Box, IconButton, InputAdornment, CircularProgress } from "@mui/material";
+import React, { useState, useRef } from "react";
+import {
+  Button,
+  IconButton,
+  CircularProgress,
+  Typography,
+  Box,
+  LinearProgress,
+  TextField,
+} from "@mui/material";
 import MicIcon from "@mui/icons-material/Mic";
-import { FaRobot } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
-import { yellow, grey } from "@mui/material/colors";
-import './styles.css';
+import { yellow, green, red } from "@mui/material/colors";
 
-const AssistantUI = () => {
-  const [question, setQuestion] = useState("Bienvenue sur Hirafi ! Voulez-vous vous inscrire ?");
-  const [response, setResponse] = useState("");
-  const [isRecording, setIsRecording] = useState(false);
-  const [isSpeaking, setIsSpeaking] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+const AssistantUI = ({ question, setQuestion }) => {
+  const [response, setResponse] = useState(""); // Réponse de l'utilisateur
+  const [isRecording, setIsRecording] = useState(false); // Statut de l'enregistrement
+  const [audioBlob, setAudioBlob] = useState(null); // Audio blob
+  const [audioStatus, setAudioStatus] = useState(""); // Statut de l'audio
+  const [error, setError] = useState(""); // Erreur
+  const [message, setMessage] = useState(""); // Message texte
+  const [isSending, setIsSending] = useState(false); // Indicateur d'envoi
+  const [step, setStep] = useState(0); // Suivi de l'étape (formulaire)
+  const mediaRecorderRef = useRef(null);
+  const audioChunksRef = useRef([]);
 
-  const [robotAnimationKey, setRobotAnimationKey] = useState(0);
+  // Liste des questions et les champs correspondants
+  const questions = [
+    { question: "Souhaitez-vous vous inscrire ?", field: "inscription" },
+    { question: "Quel est votre nom ?", field: "nom" },
+    { question: "Quel est votre prénom ?", field: "prenom" },
+    { question: "Dans quelle ville résidez-vous ?", field: "ville" },
+    { question: "Quel est votre numéro de téléphone ?", field: "telephone" },
+    { question: "Quel est votre métier ?", field: "metier" },
+    { question: "Quelle est votre adresse email ?", field: "email" },
+  ];
 
-  const handleResponse = async () => {
-    try {
-      setIsLoading(true);
-      const res = await fetch("http://localhost:5000/next", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ response }),
-      });
-      const data = await res.json();
+  const [formData, setFormData] = useState({
+    inscription: "",
+    nom: "",
+    prenom: "",
+    ville: "",
+    telephone: "",
+    metier: "",
+    email: "",
+  });
 
-      if (data.error) {
-        alert(data.error);
-      } else if (data.question) {
-        setQuestion(data.question);
-        setResponse("");
-      } else if (data.message) {
-        alert(data.message);
-        setQuestion("Le formulaire est terminé. Merci !");
+  // Fonction pour gérer l'enregistrement audio
+  const handleAudioResponse = async () => {
+    if (!isRecording) {
+      // Démarrer l'enregistrement
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        const recorder = new MediaRecorder(stream);
+        mediaRecorderRef.current = recorder;
+        audioChunksRef.current = []; // Réinitialiser les morceaux d'audio
+        recorder.start();
+        setIsRecording(true);
+        setAudioStatus("Enregistrement en cours...");
+
+        recorder.ondataavailable = (event) => {
+          audioChunksRef.current.push(event.data);
+        };
+
+        recorder.onstop = async () => {
+          const audioBlob = new Blob(audioChunksRef.current, { type: "audio/wav" });
+          setAudioBlob(audioBlob);
+          setIsRecording(false); // Arrêter l'enregistrement
+          setAudioStatus("Enregistrement terminé, envoi en cours...");
+
+          // Envoyer l'audio au serveur pour transcription
+          const formData = new FormData();
+          formData.append("audio", audioBlob, "audio.wav");
+
+          setIsSending(true); // Indiquer que l'envoi est en cours
+          try {
+            const res = await fetch("http://localhost:5000/transcribe", {
+              method: "POST",
+              body: formData,
+            });
+            const data = await res.json();
+            if (data.transcription) {
+              const filteredResponse = filterResponse(data.transcription);
+              setResponse(filteredResponse);
+              setAudioStatus("Audio envoyé et transcrit avec succès !");
+            } else {
+              setError("La transcription a échoué.");
+              setAudioStatus("Erreur lors de l'envoi de l'audio.");
+            }
+          } catch (err) {
+            setError("Erreur lors de l'envoi de l'audio.");
+            setAudioStatus("Erreur lors de l'envoi de l'audio.");
+          } finally {
+            setIsSending(false); // Terminer l'envoi
+          }
+        };
+      } catch (err) {
+        setError("Erreur lors de l'accès au microphone.");
+        setAudioStatus("Erreur d'enregistrement.");
       }
-    } catch (err) {
-      console.error("Erreur :", err);
-      alert("Une erreur est survenue.");
-    } finally {
-      setIsLoading(false);
+    } else {
+      // Arrêter l'enregistrement si déjà en cours
+      mediaRecorderRef.current.stop();
     }
   };
 
-  const readQuestion = () => {
-    setIsSpeaking(true);
-    setRobotAnimationKey((prevKey) => prevKey + 1);
-    setIsLoading(true);
-    fetch("http://localhost:5000/speak", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question }),
-    })
-      .then(() => {
-        setIsSpeaking(false);
-        setIsLoading(false);
-      })
-      .catch((err) => {
-        console.error("Erreur lors de la lecture de la question :", err);
-        alert("Erreur de lecture.");
-        setIsSpeaking(false);
-        setIsLoading(false);
-      });
+  // Fonction pour filtrer la réponse et ne garder que le mot clé
+  const filterResponse = (response) => {
+    // Utiliser des expressions régulières pour extraire des mots clés (ici, on suppose que les réponses sont les derniers mots mentionnés)
+    const words = response.split(" ");
+    const lastWord = words[words.length - 1];
+    return lastWord; // Retourner seulement le dernier mot comme réponse
   };
 
-  const handleAudioResponse = () => {
-    if (!("webkitSpeechRecognition" in window)) {
-      alert("La reconnaissance vocale n'est pas prise en charge sur ce navigateur.");
+  // Fonction pour passer à l'étape suivante
+  const nextStep = () => {
+    if (step < questions.length - 1) {
+      // Valider la réponse avant de passer à l'étape suivante
+      if (response.trim() === "" && message.trim() === "") {
+        setError("La réponse ne peut pas être vide.");
+        return;
+      }
+
+      // Mise à jour de formData avec la réponse
+      const currentField = questions[step].field;
+      const currentResponse = response.trim() || message.trim();
+      setFormData({ ...formData, [currentField]: currentResponse });
+
+      setStep(step + 1);
+      setResponse(""); // Réinitialiser la réponse pour la nouvelle question
+      setMessage(""); // Réinitialiser le message texte
+      setError(""); // Réinitialiser l'erreur
+    }
+  };
+
+  // Fonction pour envoyer le message texte
+  const handleTextMessage = async () => {
+    if (message.trim() === "" && response.trim() === "") {
+      setError("Le message ne peut pas être vide.");
       return;
     }
 
-    const recognition = new window.webkitSpeechRecognition();
-    recognition.lang = "fr-FR";
-    recognition.start();
-    setIsRecording(true);
-
-    recognition.onresult = (event) => {
-      setResponse(event.results[0][0].transcript);
-      setIsRecording(false);
-    };
-
-    recognition.onerror = () => {
-      alert("Erreur lors de la reconnaissance vocale.");
-      setIsRecording(false);
-    };
-
-    recognition.onend = () => {
-      setIsRecording(false);
-    };
+    setIsSending(true);
+    setAudioStatus("Envoi du message texte...");
+    // Simuler l'envoi du message texte au serveur ou autre logique
+    setTimeout(() => {
+      setResponse(message || response); // Prendre la réponse audio ou texte
+      setIsSending(false);
+      setAudioStatus("Message envoyé avec succès !");
+      setMessage(""); // Réinitialiser le champ de texte
+      nextStep(); // Passer à l'étape suivante
+    }, 2000);
   };
 
   return (
@@ -101,97 +164,105 @@ const AssistantUI = () => {
         padding: "20px",
       }}
     >
-      <Container
-        maxWidth="sm"
+      <div
         style={{
           backgroundColor: "#fff",
           borderRadius: "15px",
           boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
           padding: "30px",
+          width: "100%",
+          maxWidth: "600px",
         }}
       >
-        <Typography
-          variant="h4"
-          align="center"
-          gutterBottom
-          style={{ fontWeight: "bold", color: "#333" }}
-        >
+        <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: "bold", color: "#333" }}>
           Assistant Hirafi
         </Typography>
-        <Box
-          my={4}
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Typography
-            variant="h6"
-            style={{ marginRight: "15px", flex: 1, color: grey[800] }}
-          >
-            {question}
-          </Typography>
+        <Typography variant="h6" align="center" gutterBottom>
+          {questions[step].question} {/* Afficher la question actuelle */}
+        </Typography>
+
+        {/* Input pour le message texte ou audio */}
+        <Box display="flex" justifyContent="space-between" alignItems="center" mb={3}>
+          <TextField
+            label="Réponse"
+            variant="outlined"
+            fullWidth
+            value={message || response}
+            onChange={(e) => setMessage(e.target.value)}
+            disabled={isSending || isRecording}
+            style={{ marginRight: "10px" }}
+          />
+
+          {/* Icone du Microphone */}
           <IconButton
-            onClick={readQuestion}
-            color="primary"
-            disabled={isSpeaking || isLoading}
+            onClick={handleAudioResponse}
+            color={isRecording ? "secondary" : "primary"}
+            size="large"
+            style={{ backgroundColor: yellow[700], borderRadius: "50%" }}
           >
-            {isLoading ? (
+            {isRecording ? (
               <CircularProgress size={30} color="inherit" />
             ) : (
-              <FaRobot
-                key={robotAnimationKey}
-                size={40}
-                color={yellow[700]}
-                className={isSpeaking ? "speaking-animation" : ""}
-              />
+              <MicIcon style={{ fontSize: 40 }} />
             )}
           </IconButton>
         </Box>
-        <TextField
-          label="Votre réponse"
-          variant="outlined"
-          fullWidth
-          value={response}
-          onChange={(e) => setResponse(e.target.value)}
-          style={{
-            marginBottom: "20px",
-            borderRadius: "8px",
-            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-          }}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconButton
-                  onClick={handleAudioResponse}
-                  color={isRecording ? "secondary" : "default"}
-                  disabled={isRecording || isSpeaking}
-                >
-                  <MicIcon />
-                </IconButton>
-              </InputAdornment>
-            ),
-          }}
-        />
-        <Button
-          variant="contained"
-          color="primary"
-          fullWidth
-          onClick={handleResponse}
-          style={{
-            marginTop: "20px",
-            backgroundColor: "#333",
-            color: "white",
-            fontWeight: "bold",
-            textTransform: "none",
-            borderRadius: "8px",
-            padding: "12px",
-          }}
-          disabled={isLoading}
-          endIcon={<IoSend />}
-        >
-          {isLoading ? "En cours..." : "Suivant"}
-        </Button>
-      </Container>
+
+        {/* Bouton pour envoyer le message texte */}
+        <Box display="flex" justifyContent="center" alignItems="center" mb={3}>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={handleTextMessage}
+            disabled={isSending || isRecording}
+            startIcon={<IoSend />}
+          >
+            Envoyer
+          </Button>
+        </Box>
+
+        {/* Afficher le statut de l'envoi */}
+        {isSending && (
+          <Box mb={3}>
+            <LinearProgress color="primary" />
+            <Typography variant="body2" align="center" color="textSecondary">
+              Envoi en cours...
+            </Typography>
+          </Box>
+        )}
+
+        {/* Affichage du statut audio */}
+        <Box>
+          <Typography variant="h6" align="center" style={{ marginBottom: "15px" }}>
+            {audioStatus}
+          </Typography>
+
+          <Typography
+            variant="body1"
+            align="center"
+            style={{
+              marginTop: "20px",
+              color: error ? red[500] : green[500],
+              fontWeight: "bold",
+            }}
+          >
+            {error && error}
+          </Typography>
+
+          <Typography
+            variant="body1"
+            align="center"
+            style={{
+              marginTop: "20px",
+              color: green[500],
+              fontWeight: "bold",
+            }}
+          >
+           {response && `Réponse : ${response}`}
+
+          </Typography>
+        </Box>
+      </div>
     </div>
   );
 };

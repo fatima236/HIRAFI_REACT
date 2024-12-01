@@ -12,9 +12,42 @@ const Chatbot = () => {
     setIsOpen(!isOpen);
   };
 
-  const sendMessage = (message) => {
+  const sendMessage = async (message) => {
     setMessages([...messages, { sender: "user", text: message }]);
-    setMessages([...messages, { sender: "bot", text: "Message reçu!" }]);
+
+    // Send user input to the Flask backend
+    try {
+      const response = await fetch("http://localhost:5000/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          user_id: "user123",  // Example user ID, should be dynamic
+          message: message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.response) {
+        setMessages([
+          ...messages,
+          { sender: "bot", text: data.response },
+        ]);
+      } else {
+        setMessages([
+          ...messages,
+          { sender: "bot", text: "Désolé, une erreur est survenue." },
+        ]);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setMessages([
+        ...messages,
+        { sender: "bot", text: "Désolé, impossible de traiter votre demande." },
+      ]);
+    }
   };
 
   return (
@@ -154,5 +187,4 @@ const ChatBox = styled.div`
 `;
 
 export default Chatbot;
-
 

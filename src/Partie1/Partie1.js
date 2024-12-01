@@ -14,7 +14,7 @@ const Partie1 = () => {
   return (
     <div
       style={{
-        backgroundColor: "#000000", // Noir
+        backgroundColor: "#333", // Noir
         color: "white",
         padding: "13px 0", // Aucune marge latérale
         display: "flex",

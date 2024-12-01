@@ -29,7 +29,7 @@ const Partie6 = () => {
           <Feature> Amélioration Continue des Compétences</Feature>
           <Feature> Solutions Simples et Efficaces</Feature>
         </Features>
-        <DiscoverButton onClick={handleSearchClick}>Inscrivez vous en Tant qu'Artisan </DiscoverButton>
+        <DiscoverButton onClick={handleSearchClick}>Inscrivez vous en Tant qu'Artisan →</DiscoverButton>
       </Content>
       <Image>
         <img src={presentationImage} alt="Presentation" />

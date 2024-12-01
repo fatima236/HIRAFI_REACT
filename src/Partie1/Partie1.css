@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1f2a36; /* Couleur sombre */
-    color: #ffffff;
+    background-color: #333 !important; /* Couleur sombre */
+    color: #ffffff !important;
     padding: 10px 30px; /* Augmenter le padding */
     font-size: 14px;
     font-family: 'Arial', sans-serif;

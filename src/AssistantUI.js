@@ -13,37 +13,15 @@ import { IoSend } from "react-icons/io5";
 import { yellow, green, red } from "@mui/material/colors";
 
 const AssistantUI = ({ question, setQuestion }) => {
-  const [response, setResponse] = useState(""); // Réponse de l'utilisateur
-  const [isRecording, setIsRecording] = useState(false); // Statut de l'enregistrement
-  const [audioBlob, setAudioBlob] = useState(null); // Audio blob
-  const [audioStatus, setAudioStatus] = useState(""); // Statut de l'audio
-  const [error, setError] = useState(""); // Erreur
+  const [response, setResponse] = useState("");
+  const [isRecording, setIsRecording] = useState(false);
+  const [audioBlob, setAudioBlob] = useState(null);
+  const [audioStatus, setAudioStatus] = useState(""); // Déclaration de l'état audioStatus
+  const [error, setError] = useState("");
   const [message, setMessage] = useState(""); // Message texte
   const [isSending, setIsSending] = useState(false); // Indicateur d'envoi
-  const [step, setStep] = useState(0); // Suivi de l'étape (formulaire)
   const mediaRecorderRef = useRef(null);
   const audioChunksRef = useRef([]);
-
-  // Liste des questions et les champs correspondants
-  const questions = [
-    { question: "Souhaitez-vous vous inscrire ?", field: "inscription" },
-    { question: "Quel est votre nom ?", field: "nom" },
-    { question: "Quel est votre prénom ?", field: "prenom" },
-    { question: "Dans quelle ville résidez-vous ?", field: "ville" },
-    { question: "Quel est votre numéro de téléphone ?", field: "telephone" },
-    { question: "Quel est votre métier ?", field: "metier" },
-    { question: "Quelle est votre adresse email ?", field: "email" },
-  ];
-
-  const [formData, setFormData] = useState({
-    inscription: "",
-    nom: "",
-    prenom: "",
-    ville: "",
-    telephone: "",
-    metier: "",
-    email: "",
-  });
 
   // Fonction pour gérer l'enregistrement audio
   const handleAudioResponse = async () => {
@@ -74,14 +52,13 @@ const AssistantUI = ({ question, setQuestion }) => {
 
           setIsSending(true); // Indiquer que l'envoi est en cours
           try {
-            const res = await fetch("http://localhost:5000/transcribe", {
+            const res = await fetch("http://localhost:5000/transcibe", {
               method: "POST",
               body: formData,
             });
             const data = await res.json();
             if (data.transcription) {
-              const filteredResponse = filterResponse(data.transcription);
-              setResponse(filteredResponse);
+              setResponse(data.transcription);
               setAudioStatus("Audio envoyé et transcrit avec succès !");
             } else {
               setError("La transcription a échoué.");
@@ -104,47 +81,20 @@ const AssistantUI = ({ question, setQuestion }) => {
     }
   };
 
-  // Fonction pour filtrer la réponse et ne garder que le mot clé
-  const filterResponse = (response) => {
-    const words = response.split(" ");
-    const lastWord = words[words.length - 1];
-    return lastWord; // Retourner seulement le dernier mot comme réponse
-  };
-
-  // Fonction pour passer à l'étape suivante
-  const nextStep = () => {
-    if (step < questions.length - 1) {
-      if (response.trim() === "" && message.trim() === "") {
-        setError("La réponse ne peut pas être vide.");
-        return;
-      }
-
-      const currentField = questions[step].field;
-      const currentResponse = response.trim() || message.trim();
-      setFormData({ ...formData, [currentField]: currentResponse });
-
-      setStep(step + 1);
-      setResponse(""); // Réinitialiser la réponse pour la nouvelle question
-      setMessage(""); // Réinitialiser le message texte
-      setError(""); // Réinitialiser l'erreur
-    }
-  };
-
   // Fonction pour envoyer le message texte
   const handleTextMessage = async () => {
-    if (message.trim() === "" && response.trim() === "") {
+    if (message.trim() === "") {
       setError("Le message ne peut pas être vide.");
       return;
     }
-
     setIsSending(true);
     setAudioStatus("Envoi du message texte...");
+    // Simuler l'envoi du message texte au serveur ou autre logique
     setTimeout(() => {
-      setResponse(message || response); // Prendre la réponse audio ou texte
+      setResponse(message);
       setIsSending(false);
       setAudioStatus("Message envoyé avec succès !");
       setMessage(""); // Réinitialiser le champ de texte
-      nextStep(); // Passer à l'étape suivante
     }, 2000);
   };
 
@@ -174,16 +124,16 @@ const AssistantUI = ({ question, setQuestion }) => {
           Assistant Hirafi
         </Typography>
         <Typography variant="h6" align="center" gutterBottom>
-          {questions[step].question}
+          {question}
         </Typography>
 
         {/* Input pour le message texte ou audio */}
         <Box display="flex" justifyContent="space-between" alignItems="center" mb={3}>
           <TextField
-            label="Réponse"
+            label="Message"
             variant="outlined"
             fullWidth
-            value={message || response}
+            value={message}
             onChange={(e) => setMessage(e.target.value)}
             disabled={isSending || isRecording}
             style={{ marginRight: "10px" }}
@@ -210,14 +160,15 @@ const AssistantUI = ({ question, setQuestion }) => {
             variant="contained"
             color="primary"
             onClick={handleTextMessage}
-            disabled={isSending || isRecording}
             startIcon={<IoSend />}
+            fullWidth
+            disabled={isSending || isRecording || !message}
           >
-            Envoyer
+            Envoyer le message
           </Button>
         </Box>
 
-        {/* Afficher le statut de l'envoi */}
+        {/* Affichage de l'état d'envoi */}
         {isSending && (
           <Box mb={3}>
             <LinearProgress color="primary" />
@@ -227,7 +178,6 @@ const AssistantUI = ({ question, setQuestion }) => {
           </Box>
         )}
 
-        {/* Affichage du statut audio */}
         <Box>
           <Typography variant="h6" align="center" style={{ marginBottom: "15px" }}>
             {audioStatus}
@@ -256,6 +206,16 @@ const AssistantUI = ({ question, setQuestion }) => {
           >
             {response && `Réponse : ${response}`}
           </Typography>
+
+          {/* Affichage du lecteur audio si l'audioBlob est disponible */}
+          {audioBlob && (
+            <Box mt={3} display="flex" justifyContent="center">
+              <audio controls>
+                <source src={URL.createObjectURL(audioBlob)} type="audio/wav" />
+                Your browser does not support the audio element.
+              </audio>
+            </Box>
+          )}
         </Box>
       </div>
     </div>

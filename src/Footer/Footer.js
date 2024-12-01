@@ -1,6 +1,8 @@
-// Footer.js
 import React from "react";
 import "./Footer.css";
+import image from '../assets/2028.png';
+import images from '../assets/2020.png';
+
 
 function Footer() {
   return (
@@ -51,14 +53,14 @@ function Footer() {
         <div className="footer-section posts">
           <h3>RECENT POSTS</h3>
           <div className="post">
-            <img src="/2028.png" alt="Post 1" />
+            <img src={image} alt="Post 1" />
             <div>
               <p>Réparation et Entretien du voiture.</p>
               <span>21 Octobre 2024</span>
             </div>
           </div>
           <div className="post">
-            <img src="/2020.png" alt="Post 2" />
+            <img src={images} alt="Post 2" />
             <div>
               <p>Cablage et Electricité.</p>
               <span>22 Octobre 2024</span>
@@ -79,3 +81,8 @@ function Footer() {
 }
 
 export default Footer;
+
+
+
+
+

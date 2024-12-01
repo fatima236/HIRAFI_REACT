@@ -17,7 +17,7 @@ CORS(app)
 logging.basicConfig(level=logging.INFO)
 
 # Charger le modèle Whisper
-model = whisper.load_model("medium")  # Utilise un modèle plus performant
+model = whisper.load_model("small")  # Utilise un modèle plus performant
 
 # Charger les données du fichier CSV
 def load_csv_data():
@@ -178,5 +178,5 @@ def home():
     return jsonify({"message": "Bienvenue à l'API de transcription et validation des artisans !"})
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=True, host="0.0.0.0", port="5000")
 

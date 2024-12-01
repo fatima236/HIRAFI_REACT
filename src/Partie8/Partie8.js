@@ -1,63 +1,40 @@
 import React from "react";
 import "./Partie8.css";
-import { FaUser, FaEnvelope, FaPhone, FaCommentDots } from "react-icons/fa"; 
-import { MdOutlineSubject } from "react-icons/md";
 
-const Partie8 = () => {
+const ContactForm = () => {
   return (
-    <div className="contact-form-container">
-      <div className="contact-header">
+    <div className="form-wrapper">
+      <div className="form-header">
         <h5>📩 Contactez Nous</h5>
-        <h1>Have Any Questions?</h1>
+        <h1>Besoin d'aide ?</h1>
         <p>
-          Enthusiastically disintermediate one-to-one leadership via business e-commerce. 
-          Dramatically reintermediate compelling process improvements rather than empowered relationships.
+          Remplissez ce formulaire pour nous contacter. Nous vous répondrons dans les plus brefs délais.
         </p>
       </div>
       <form className="contact-form">
         <div className="form-row">
-          <div className="form-group">
-            <FaUser className="icon" />
-            <input type="text" placeholder=" Nom Complet" />
-          </div>
-          <div className="form-group">
-            <FaEnvelope className="icon" />
-            <input type="email" placeholder="adresse Email " />
-          </div>
+          <input type="text" placeholder="Nom Complet" />
+          <input type="email" placeholder="Adresse Email" />
         </div>
         <div className="form-row">
-          <div className="form-group">
-            <MdOutlineSubject className="icon" />
-            <select>
-              <option>ville</option>
-              <option> Oujda </option>
-              <option>Fes</option>
-              <option>Rabat</option>
-              <option>Casablanca</option>
-              <option>Tanger</option>
-              <option>Nador</option>
-
-            </select>
-          </div>
-          <div className="form-group">
-            <FaPhone className="icon" />
-            <input type="text" placeholder=" Numéro de téléphone" />
-          </div>
+          <select>
+            <option>Ville</option>
+            <option>Oujda</option>
+            <option>Fes</option>
+            <option>Rabat</option>
+            <option>Casablanca</option>
+            <option>Tanger</option>
+            <option>Nador</option>
+          </select>
+          <input type="tel" placeholder="Numéro de téléphone" />
         </div>
         <div className="form-row">
-          <div className="form-group message-group">
-            <FaCommentDots className="icon" />
-            <textarea placeholder="votre Message"></textarea>
-          </div>
+          <textarea placeholder="Votre message"></textarea>
         </div>
-        <div className="form-row">
-          <button type="submit" className="submit-btn">
-            Envoyez  →
-          </button>
-        </div>
+        <button type="submit">Envoyer →</button>
       </form>
     </div>
   );
 };
 
-export default Partie8;
+export default ContactForm;

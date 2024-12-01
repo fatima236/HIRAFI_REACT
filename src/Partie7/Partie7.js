@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Partie7.css";
 
 function Partie7() {
@@ -26,30 +26,48 @@ function Partie7() {
     },
   ];
 
+  // State to handle "Read More" and "Read Less"
+  const [expanded, setExpanded] = useState(null);
+
+  const toggleReadMore = (id) => {
+    setExpanded(expanded === id ? null : id);
+  };
+
   return (
     <div className="testimonial-section">
-      {/* Section Header */}
-      <div className="testimonial-header">
-        <p className="feedback-label">AVIS DE NOS CLIENTS</p>
-        <h1>Ce que Nos Clients Disent</h1>
-        <h2>A Propos de Nous?</h2>
-      </div>
+      <div className="testimonial-content">
+        {/* Section Header */}
+        <div className="testimonial-header">
+          <p className="feedback-label">AVIS DE NOS CLIENTS</p>
+          <h1>Ce que Nos Clients Disent</h1>
+          <h2>A Propos de Nous?</h2>
+        </div>
 
-      {/* Testimonials Cards */}
-      <div className="testimonial-cards">
-        {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="testimonial-card">
-            {/* Profile Picture or Placeholder */}
-            <div className="profile-picture">
-              {/* Placeholder for score */}
-              <div className="score">{testimonial.score}</div>
+        {/* Testimonials Cards */}
+        <div className="testimonial-cards">
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="testimonial-card">
+              {/* Profile Picture or Placeholder */}
+              <div className="profile-picture">
+                <div className="score">{testimonial.score}</div>
+              </div>
+
+              {/* Rating and Comment */}
+              <div className="rating">{testimonial.rating}</div>
+              <p className="testimonial-text">
+                {expanded === testimonial.id
+                  ? testimonial.comment
+                  : testimonial.comment.slice(0, 150) + "..."}
+              </p>
+              <button
+                className="read-more"
+                onClick={() => toggleReadMore(testimonial.id)}
+              >
+                {expanded === testimonial.id ? "Read Less" : "Read More"}
+              </button>
             </div>
-
-            {/* Rating and Comment */}
-            <div className="rating">{testimonial.rating}</div>
-            <p className="testimonial-text">{testimonial.comment}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1f2a36; /* Couleur sombre */
+    background-color: #004d40 !important; /* Couleur sombre */
     color: #ffffff;
     padding: 10px 30px; /* Augmenter le padding */
     font-size: 14px;

@@ -1,91 +1,62 @@
 .hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #f5f5f5;
-  padding: 50px;
-  position: relative;
+  padding: 20px;
+  text-align: center;
 }
 
 .text-container {
-  max-width: 600px;
-}
-
-.subheading {
-  color: #ffae00;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 36px;
-  font-weight: bold;
   margin-bottom: 20px;
 }
 
-.description {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 30px;
-}
-
-.dropdowns-container {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.dropdown {
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  min-width: 180px;
-}
-
-.search-button {
-  background-color:#ffae00 ;
-  color: #000;
-  padding: 10px 20px;
-  font-size: 14px;
-  border: none;
-  border-radius: 25px;
-  font-weight: bold ;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.search-icon {
-  font-size: 16px;
-}
-
-.hero-image {
-  max-width: 400px;
+.image-container img {
+  width: 80%; /* Réduire la largeur pour laisser plus d'espace */
+  max-width: 400px; /* Limiter la taille maximale */
+  height: auto; /* Garder les proportions */
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.image-container {
-  flex-shrink: 0;
-  margin-left: 20px;
-}
-label {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #333;
-  margin-bottom: 0.5rem;
+button {
+  border-radius: 8px;
+  font-size: 16px;
 }
 
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60%;
-  height: 100%;
-  background: url('https://via.placeholder.com/500x700') no-repeat center center/cover;
-  z-index: -1;
-  opacity: 0.2;
+button:hover {
+  opacity: 0.9;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-container img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.05); /* Agrandissement léger au survol */
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-container img:hover {
+  transform: scale(1.1); /* Zoom léger au survol */
+}
+
+button:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); /* Léger soulèvement au survol */
 }

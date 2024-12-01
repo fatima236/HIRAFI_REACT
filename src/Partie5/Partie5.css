@@ -1,95 +1,97 @@
-/* App.css */
+/* Conteneur principal */
+.partie5-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #004d40; /* Dégradé de couleurs pour un fond plus moderne */
+  color: #fff;
+  height: 100vh;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+}
 
-.app {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    background-image: url('../assets/techn.png') !important;
-    background-size: cover  !important;
-    background-position: center center !important;
-    
-    color: #fff !important;
-    height: 100vh !important;
-    padding: 20px !important; 
-    font-family: 'Arial', sans-serif !important;
+/* Titre principal */
+.title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Conteneur des cartes */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+.card-container.bottom {
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cartes */
+.card {
+  background-color: #4b7871;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card.active {
+  background-color: #4b7871; /* Changer la couleur lors de la sélection */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Icônes */
+.icon {
+  font-size: 40px;
+  color: #ffae00;
+  margin-bottom: 20px;
+}
+
+/* Label de la carte */
+.label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Détails de la carte */
+.details {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #f1f1f1;
+}
+
+.detail-item {
+  margin: 8px 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
   }
-  
   .title {
-    font-size: 2rem !important;
-    color: whitesmoke !important;
-    margin-bottom: 20px !important;
-    text-shadow: 1px 1px 6px rgba(206, 228, 8, 0.786) !important;
+    font-size: 2rem;
   }
-  
-  .grid {
-    padding-top: 25px !important;
-    padding-left: 20px !important;
-    padding-right:60px  !important;
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
-    gap: 80px !important;
-    width: 100% !important;
-    max-width: 1000px !important;
-    grid-auto-flow: dense !important;
-  }
-  
-  .card {
-     width: 100% !important;
-     
-
-     
-    background-color: gray !important;
-    border: 2px solid rgba(8, 63, 228, 0.786) !important;
-    border-radius: 10px !important;
-    padding: 20px !important;
-    text-align: center !important;
-    transition: transform 0.3s ease, background-color 0.3s ease !important;
-    cursor: pointer !important;
-    color: #fff !important;
-    text-shadow: 1px 1px 6px rgba(221, 255, 0, 0.6) !important;
-    position: relative !important;
-  }
-  
-  .card.active {
-    background-color:#333 !important;
-    color: whitesmoke !important;
-  }
-  
-  .card:hover {
-    transform: scale(1.05) !important;
-    background-color: #333 !important;
-  }
-  
-  .card .icon {
-      display: flex !important; 
-      
-    font-size: 30px !important;
-    align-items: center !important;
-    margin-bottom: 10px !important;
-    color:#ffae00 !important; 
-  }
-  
-  .label {
-    
-    font-weight: bold !important;
-    margin-bottom: 10px !important;
-  }
-  
-  .details {
-    margin-top: 15px !important;
-    text-align: left !important;
-    font-size: 0.9rem !important;
-    color: #fff !important;
-  }
-  
-  .detail-item {
-    margin: 5px 0 !important ;
-    font-weight: normal !important;
-  }
-  .centered {
-    display: flex !important;
-    width:55% !important;
-    justify-content: center !important;
-    gap: 20px !important;
-    margin-top: 20px !important
-  }
+}

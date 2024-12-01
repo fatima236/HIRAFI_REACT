@@ -1,60 +1,128 @@
 import React, { useState } from 'react';
 import './Partie3.css';
-import { FaHammer, FaTractor, FaToolbox, FaPaintRoller, FaBolt, FaLeaf, FaDoorOpen, FaTree, FaFire, FaLock, FaBroom, FaTruckMoving } from 'react-icons/fa';
+import { FaMicrophone, FaFileAlt, FaTimes, FaPlus } from 'react-icons/fa';
 
+// Importation des images
+import maconImage from '../assets/macon.jpg';
+import menuisierImage from '../assets/menuisier.jpg';
+import plombierImage from '../assets/plombe1.jpg';
+import peintreImage from '../assets/paintre.jpg';
+
+// Liste des services avec leurs titres, descriptions et images
 const services = [
-  { title: "Maçonnerie", description: "Construction de murs, fondations, travaux de béton, rénovation de façades.", icon: <FaHammer /> },
-  { title: "Menuiserie", description: "Pose de fenêtres, création de meubles, escaliers, aménagement de rangements.", icon: <FaToolbox /> },
-  { title: "Charpenterie", description: "Charpentes de toiture, ossatures bois, restauration de charpentes.", icon: <FaTractor /> },
-  { title: "Électricité", description: "Installation électrique, remise aux normes, éclairage, domotique.", icon: <FaBolt /> },
-  { title: "Plomberie", description: "Installation de systèmes de plomberie, réparation de fuites, chauffe-eau, salles de bains.", icon: <FaToolbox /> },
-  { title: "Peinture et Décoration", description: "Peinture intérieure et extérieure, pose de papier peint, enduits décoratifs.", icon: <FaPaintRoller /> },
-  { title: "Revêtement de Sol", description: "Pose de carrelage, parquet, moquette et vinyle, béton ciré.", icon: <FaLeaf /> },
-  { title: "Isolation", description: "Isolation thermique et acoustique, étanchéité à l'air et à l'eau.", icon: <FaDoorOpen /> },
-  { title: "Ferronnerie et Soudure", description: "Création de portails et garde-corps, escaliers métalliques, soudure.", icon: <FaHammer /> },
-  { title: "Paysagisme et Aménagement Extérieur", description: "Création de jardins, pose de clôtures, aménagement de terrasses.", icon: <FaTree /> },
-  { title: "Chauffage et Climatisation", description: "Installation de systèmes de chauffage, climatisation, énergies renouvelables.", icon: <FaFire /> },
-  { title: "Serrurerie et Sécurité", description: "Installation de serrures, blindage de portes, systèmes de sécurité.", icon: <FaLock /> },
-  { title: "Entretien Général et Nettoyage", description: "Nettoyage haute pression, démoussage de toitures, nettoyage de fin de chantier.", icon: <FaBroom /> },
-  { title: "Déménagement et Transport", description: "Emballage et transport de meubles, montage et démontage de meubles.", icon: <FaTruckMoving /> }
+  {
+    title: "Masonry",
+    description: "Building walls, foundations, concrete work, and facade renovation.",
+    imagePath: maconImage
+  },
+  {
+    title: "Carpentry",
+    description: "Window installation, furniture creation, stairs, and storage solutions.",
+    imagePath: menuisierImage
+  },
+  {
+    title: "Plumbing",
+    description: "Plumbing systems, leak repairs, water heaters, and bathrooms.",
+    imagePath: plombierImage
+  },
+  {
+    title: "Painting",
+    description: "Interior and exterior painting, wallpaper installation, and decorative coatings.",
+    imagePath: peintreImage
+  }
 ];
 
 const Partie3 = () => {
-  const [startIndex, setStartIndex] = useState(0);
-  const itemsPerPage = 5;
+  const [activeService, setActiveService] = useState(null); // Stocke le service actif
+  const [audio, setAudio] = useState(false); // Contrôle l'affichage audio
+  const [text, setText] = useState(false); // Contrôle l'affichage texte
+  const [showIcons, setShowIcons] = useState(false); // Contrôle l'affichage des icônes de texte/audio/fermer
 
-  const handleNext = () => {
-    setStartIndex((prevIndex) => (prevIndex + itemsPerPage) % services.length);
+  const handleServiceClick = (index) => {
+    setActiveService(index);
+    setShowIcons(false); // Réinitialise les icônes au clic
+    setAudio(false);
+    setText(false);
   };
 
-  const handlePrev = () => {
-    setStartIndex((prevIndex) =>
-      (prevIndex - itemsPerPage + services.length) % services.length
-    );
+  const handleAddClick = (index) => {
+    setActiveService(index);
+    setShowIcons(!showIcons); // Affiche ou masque les icônes pour ce service
+  };
+
+  const handleAudioClick = () => {
+    setAudio(true);
+    setText(false); // Affiche uniquement audio
+  };
+
+  const handleTextClick = () => {
+    setText(true);
+    setAudio(false); // Affiche uniquement texte
+  };
+
+  const handleCloseClick = () => {
+    setShowIcons(false); // Ferme les icônes
   };
 
   return (
     <div className="services-section">
       <div className="services-header">
-        <h1>NOS SERVICES</h1>
-        <h2>Nous fournissons un service exclusif  <span>pour vous</span></h2>
-        
+        <h1>Our Services</h1>
+        <h2>Click on a service to learn more</h2>
       </div>
+
+      {/* Carousel des services */}
       <div className="services-carousel">
-        {services.slice(startIndex, startIndex + itemsPerPage).map((service, index) => (
-          <div className="service-card" key={index}>
-            <div className="icon">{service.icon}</div>
+        {services.map((service, index) => (
+          <div 
+            key={index} 
+            className="service-card" 
+            onClick={() => handleServiceClick(index)}
+          >
+            <img src={service.imagePath} alt={service.title} className="service-image" />
             <h3>{service.title}</h3>
-            <p>{service.description}</p>
+            {/* Bouton + positionné sur chaque image */}
+            <div onClick={() => handleAddClick(index)} className="add-icon">
+              <FaPlus />
+            </div>
+
+            {showIcons && activeService === index && (
+              <div className="icons">
+                {/* Icône pour audio */}
+                <div onClick={handleAudioClick} className="icon">
+                  <FaMicrophone size={30} />
+                  <p>Audio</p>
+                </div>
+                {/* Icône pour texte */}
+                <div onClick={handleTextClick} className="icon">
+                  <FaFileAlt size={30} />
+                  <p>Text</p>
+                </div>
+                {/* Icône pour fermer */}
+                <div onClick={handleCloseClick} className="icon">
+                  <FaTimes size={30} />
+                  <p>Close</p>
+                </div>
+              </div>
+            )}
+
+            {/* Détails du service */}
+            {activeService === index && (
+              <div className="service-content">
+                {audio && <p>Audio description for {service.title}...</p>}
+                {text && <p>{service.description}</p>}
+              </div>
+            )}
           </div>
         ))}
-      </div>
-      <div className="carousel-buttons">
-        <button onClick={handlePrev} className="carousel-button">«</button>
-        <button onClick={handleNext} className="carousel-button">»</button>
       </div>
     </div>
   );
 };
+export default Partie3;  /* Section des services */
 
-export default Partie3 ;
+
+
+
+
+

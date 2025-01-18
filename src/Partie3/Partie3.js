@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,18 +21,26 @@ const Partie3 = () => {
     { name: "Peinture", role: "Peinture intérieure et extérieure, pose de papier peint, enduits décoratifs.", image: peintreImage },
     { name: "Entretien Général et Nettoyage", role: "Nettoyage haute pression, démoussage de toitures, nettoyage de fin de chantier.", image: nettoiImage },
     { name: "Chauffage et Climatisation", role: "Installation de systèmes de chauffage, climatisation, énergies renouvelables.", image: chaufImage },
-    { name: "Électricité", role: "Installation électrique, remise aux normes, éclairage, domotique.Installation de systèmes de plomberie.", image: elecImage  },
+    { name: "Électricité", role: "Installation électrique, remise aux normes, éclairage, domotique.", image: elecImage },
     { name: "Déménagement et Transport", role: "Emballage et transport de meubles, montage et démontage de meubles.", image: tranImage },
-    { name: "Jane Smith", role: "Data Scientist", image: "https://via.placeholder.com/300x300?text=Jane+Smith" },
   ];
+
+  // État pour gérer la carte sélectionnée
+  const [selectedCard, setSelectedCard] = useState(null);
+
+  // Fonction pour gérer le clic sur une carte
+  const handleCardClick = (index) => {
+    // Si la carte est déjà sélectionnée, la désélectionner, sinon la sélectionner
+    setSelectedCard(selectedCard === index ? null : index);
+  };
 
   // Configuration du carousel
   const settings = {
-    dots: true, // Affichage des points de navigation
-    infinite: false, // Pas de boucle infinie
-    speed: 500, // Vitesse de transition
-    slidesToShow: 4, // Affiche 4 cartes à la fois
-    slidesToScroll: 4, // Défiler de 4 cartes à la fois
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     customPaging: (i) => (
       <div
         style={{
@@ -56,7 +64,7 @@ const Partie3 = () => {
           justifyContent: "center",
         }}
       >
-        <ul style={{ display: "flex", padding: "0", margin: "0" }}>{dots.slice(0, 2)}</ul> {/* Limiter les points à 2 */}
+        <ul style={{ display: "flex", padding: "0", margin: "0" }}>{dots.slice(0, 2)}</ul>
       </div>
     ),
     responsive: [
@@ -77,7 +85,7 @@ const Partie3 = () => {
     ],
   };
 
-  // Styles inline pour les cartes et autres éléments
+  // Styles inline pour les cartes
   const styles = {
     section: {
       padding: "2rem",
@@ -92,7 +100,7 @@ const Partie3 = () => {
       color:"#333"
     },
     cardWrapper: {
-      padding: "0 15px", // Espaces entre les cartes
+      padding: "0 15px",
       boxSizing: "border-box",
     },
     card: {
@@ -101,7 +109,12 @@ const Partie3 = () => {
       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
       overflow: "hidden",
       transition: "transform 0.3s, box-shadow 0.3s",
-      margin: "0 15px", // Ajout d'un espace de 30px entre les cartes (total de 30px)
+      margin: "0 15px",
+      cursor: "pointer",
+    },
+    cardSelected: {
+      backgroundColor: "#f39c12",
+      border: "2px solid #f39c12",
     },
     image: {
       width: "100%",
@@ -132,7 +145,14 @@ const Partie3 = () => {
       <Slider {...settings}>
         {teamMembers.map((member, index) => (
           <div key={index} style={styles.cardWrapper}>
-            <div className="team-card" style={styles.card}>
+            <div
+              className="team-card"
+              style={{
+                ...styles.card,
+                ...(selectedCard === index ? styles.cardSelected : {}),
+              }}
+              onClick={() => handleCardClick(index)} // Gérer le clic sur la carte
+            >
               <img src={member.image} alt={member.name} style={styles.image} />
               <div style={styles.content}>
                 <h3 style={styles.name}>{member.name}</h3>

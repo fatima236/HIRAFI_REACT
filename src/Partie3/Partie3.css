@@ -1,25 +1,165 @@
-.one{
-  font-size: 18px;
-    color: #333;
-    margin: 10px 0 0 0;
-    letter-spacing: 1px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+/* Partie3.css */
+.partie3 {
+  padding: 4rem 2rem;
+  background-color: #f7f9fc;
+  text-align: center;
 }
-.two::before {
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.title::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 50px;
   height: 4px;
-  background-color: #f39c12; /* Yellow color */
-  margin: 0 auto 10px auto;
+  background-color: #f39c12;
+  margin: 1rem auto 0;
 }
- .two::after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 4px;
-  background-color:#f39c12; /* Yellow color */
-  margin: 10px auto 0 auto;
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.subtitle span {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.card {
+  background-color: #efebe5;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .card {
+    margin: 0 10px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .partie3 {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    margin: 0 5px;
+  }
+
+  .card-image img {
+    height: 180px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partie3 {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    margin: 0 5px;
+  }
+
+  .card-image img {
+    height: 160px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
 }

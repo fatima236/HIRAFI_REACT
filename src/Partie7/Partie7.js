@@ -26,7 +26,6 @@ function Partie7() {
     },
   ];
 
-  // State to handle "Read More" and "Read Less"
   const [expanded, setExpanded] = useState(null);
 
   const toggleReadMore = (id) => {
@@ -46,7 +45,10 @@ function Partie7() {
         {/* Testimonials Cards */}
         <div className="testimonial-cards">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="testimonial-card">
+            <div
+              key={testimonial.id}
+              className="testimonial-card"
+            >
               {/* Profile Picture or Placeholder */}
               <div className="profile-picture">
                 <div className="score">{testimonial.score}</div>
@@ -57,7 +59,7 @@ function Partie7() {
               <p className="testimonial-text">
                 {expanded === testimonial.id
                   ? testimonial.comment
-                  : testimonial.comment.slice(0, 150) + "..."}
+                  : `${testimonial.comment.slice(0, 150)}...`}
               </p>
               <button
                 className="read-more"

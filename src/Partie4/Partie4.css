@@ -1,119 +1,181 @@
-/* Container principale */
-.it-solution-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    background: #f9f9f9;
+/* Section principale */
+.it-solution-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  background: #f9f9f9;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1200px; /* Limiter la largeur maximale */
+  margin: 0 auto; /* Centrer la section horizontalement */
+  transition: all 0.5s ease;
+}
+
+/* Section du texte */
+.it-solution-content {
+  flex: 1;
+  max-width: 600px;
+  animation: fadeIn 1s forwards;
+  padding: 2rem;
+}
+
+.subheading {
+  font-weight: bold;
+  color: #ffae00;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+h1 {
+  font-size: 3rem; /* Augmenter la taille du titre */
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+h1 .highlight {
+  color: #ffae00;
+}
+
+p {
+  margin: 1rem 0;
+  font-size: 1.25rem; /* Agrandir le texte */
+  color: #666;
+  line-height: 1.8;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.2s;
+}
+
+.it-solution-features {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.it-solution-features li {
+  margin-bottom: 1rem;
+  font-size: 1.25rem; /* Agrandir la taille des éléments de la liste */
+  color: #333;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.5s;
+}
+
+.it-solution-features li::before {
+  content: "✅";
+  margin-right: 0.8rem;
+}
+
+.discover-btn {
+  padding: 1rem 2rem; /* Agrandir le bouton */
+  font-size: 1.2rem; /* Agrandir la taille du texte */
+  background-color: #ffae00;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.8s;
+}
+
+.discover-btn:hover {
+  background-color: #e38d00;
+  transform: scale(1.05);
+}
+
+/* Section des images */
+.it-solution-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1;
+  max-width: 400px;
+}
+
+.image-main {
+  display: flex;
+  gap: 1rem;
+}
+
+.image-inner {
+  width: 180px; /* Agrandir les images */
+  height: 180px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2s;
+}
+
+.image-side {
+  width: 350px; /* Agrandir l'image de côté */
+  height: 220px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2.2s;
+}
+
+.image-inner:hover,
+.image-side:hover {
+  transform: scale(1.05);
+}
+
+/* Images spécifiques */
+.image-1 {
+  background-image: url("../assets/plombe.png");
+}
+
+.image-2 {
+  background-image: url("../assets/comp9.png");
+}
+
+.image-3 {
+  background-image: url("../assets/techn.png");
+}
+
+/* Animation fadeIn */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
-  .subheading {
-    color: #ffae00 !important;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-  }
-  
-  
-  /* Texte */
-  .it-solution-content {
-    flex: 1;
-    margin-right: 2rem;
-  }
-  
-  .it-solution-content h1 {
-    font-size: 2.5rem;
-    color: #333;
-  }
-  
-  .it-solution-content .highlight {
-    color: #ffae00;
-  }
-  
-  .it-solution-content p {
-    margin: 1rem 0;
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-  }
-  
-  .it-solution-features {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-  }
-  
-  .it-solution-features li {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  .discover-btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    background-color: #ffae00 !important;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .discover-btn:hover {
-    background-color: #ffae00;
-  }
-  
-  /* Section Images */
-  .it-solution-images {
-    flex: 1;
-    position: relative;
-    display: flex;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .it-solution-section {
     flex-direction: column;
-    align-items: flex-start;
+    padding: 2rem;
   }
-  
-  .image-main {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-bottom: 1rem;
+
+  .it-solution-content,
+  .it-solution-images {
+    max-width: 100%;
   }
-  
-  .image-inner {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    font-size: 2.5rem; /* Taille réduite sur les petits écrans */
   }
-  
-  .image-side {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .discover-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem;
   }
-  
-  /* Images spécifiques */
-  .image-1 {
-    background-image: url("../assets/plombe.png");
-    width: 250px;
-    height:250px;
-  }
-  
-  .image-2 {
-    background-image: url("../assets/comp9.png");
-    width: 250px;
-    height:250px;
-    
-  }
-  
-  .image-3 {
-    background-image: url("../assets/techn.png");
-    width:500px
-  }
-  
+}

@@ -34,25 +34,25 @@ const Header = () => {
             alignItems: "center",
           }}
         >
-          <span style={{ fontSize: "24px" }}>HIR</span>AFI
+          <span style={{ fontSize: "24px" }}>HIRAFI</span>
         </div>
       </div>
 
       {/* Menu */}
       <div style={{ display: "flex", alignItems: "center" }}>
-        <a href="#home" style={menuStyle}>
+        <a href="#Accueil" style={menuStyle}>
           Accueil
         </a>
-        <a href="#services" style={menuStyle}>
+        <a href="#Services" style={menuStyle}>
           Services
         </a>
-        <a href="#about" style={menuStyle}>
+        <a href="#A Propos" style={menuStyle}>
           à propos de nous
         </a>
-        <a href="#artisan" style={menuStyle}>
-          Artisan
+        <a href="#Artisans" style={menuStyle}>
+          Artisans
         </a>
-        <a href="#contact" style={menuStyle}>
+        <a href="#Contact" style={menuStyle}>
           Contact
         </a>
       </div>

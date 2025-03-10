@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AssistantUI from "./AssistantUI";
-import Partie1 from './Partie1/Partie1';
+import Recherche from './Recherche/Recherche';
 import Header from './Header/Header';
-import Partie2 from './Partie2/Partie2';
-import Partie3 from './Partie3/Partie3';
-import Partie4 from './Partie4/Partie4';
-import Partie5 from './Partie5/Partie5';
+import Accueil from './Acceuil/Acceuil';
+import Services from './Services/Services';
+import Partie4 from './A propos/A Propos';
+import Partie5 from './Pourquoi nous choisir/Pourquoi nous choisir';
 import Partie6 from './Partie6/Partie6';
 import Partie7 from './Partie7/Partie7';
-import Partie8 from './Partie8/Partie8';
+import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import MapPage from './MapPage/MapPage';
 import Chatbot from './Chatbot'; // Import the Chatbot
@@ -21,20 +21,20 @@ const App = () => {
     <Router>
       <div>
         {/* Common site sections */}
-        <Partie1 />
+        <Recherche />
         <Header />
 
         {/* Main Routes */}
         <Routes>
           <Route path="/" element={
             <>
-              <Partie2 />
-              <Partie3 />
+              <Accueil />
+              <Services />
               <Partie4 />
               <Partie5 />
               <Partie6 />
               <Partie7 />
-              <Partie8 />
+              <Contact />
               <Footer />
             </>
           } />

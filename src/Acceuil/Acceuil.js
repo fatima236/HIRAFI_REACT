@@ -44,6 +44,7 @@ const FilterSection = () => {
   };
 
   return ( 
+    <div id="Accueil">
     <Box sx={{ padding: 4 }}>
       <Grid container spacing={4} alignItems="center"> 
         {/* Left Column - Welcome Section */}
@@ -218,6 +219,7 @@ const FilterSection = () => {
 
       </Grid> 
     </Box> 
+    </div>
   ); 
 }; 
 

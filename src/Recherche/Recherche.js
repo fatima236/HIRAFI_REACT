@@ -2,7 +2,7 @@ import React from "react";
 import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 
-const Partie1 = () => {
+const Recherche = () => {
   const iconStyle = {
     color: "#FFB400", // Jaune foncé/orangé
     fontSize: "20px",
@@ -12,7 +12,7 @@ const Partie1 = () => {
   };
 
   return (
-    <div
+    <div id="Recheche"
       style={{
         backgroundColor: "#333", // Noir
         color: "white",
@@ -71,4 +71,4 @@ const Partie1 = () => {
   );
 };
 
-export default Partie1;
+export default Recherche;

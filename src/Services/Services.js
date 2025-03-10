@@ -10,9 +10,9 @@ import nettoiImage from '../assets/nettoi.png';
 import chaufImage from '../assets/chauff.png';
 import elecImage from '../assets/elec.png';
 import tranImage from '../assets/trans.png';
-import './Partie3.css';
+import './Services.css';
 
-const Partie3 = () => {
+const Services = () => {
   // Données des membres de l'équipe
   const teamMembers = [
     { name: "Maçonnerie", role: "Construction de murs, fondations, travaux de béton, rénovation de façades.", image: maconImage },
@@ -137,6 +137,7 @@ const Partie3 = () => {
   };
 
   return (
+    <div id="Services" >
     <section style={styles.section}>
       <h2 style={styles.title} class="two">
         NOS <span >SERVICES</span>
@@ -163,7 +164,8 @@ const Partie3 = () => {
         ))}
       </Slider>
     </section>
+    </div>
   );
 };
 
-export default Partie3;
+export default Services;

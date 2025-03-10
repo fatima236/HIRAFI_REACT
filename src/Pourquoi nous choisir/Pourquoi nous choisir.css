@@ -4,9 +4,9 @@
   flex-direction: column;
   align-items: center;
   background: #333;
-  background-size: cover; /* Dégradé de couleurs pour un fond plus moderne */
+  background-size: cover;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   padding: 40px;
   font-family: 'Roboto', sans-serif;
 }
@@ -39,19 +39,18 @@
 
 /* Cartes */
 .card {
-  
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  color: #fff ;
+  color: #fff;
   text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card.active {
-  background-color: #000; /* Changer la couleur lors de la sélection */
+  background-color: #000;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -87,12 +86,63 @@
   margin: 8px 0;
 }
 
-/* Responsiveness */
+/* ---------------- RESPONSIVENESS ---------------- */
+
+/* Écrans larges (jusqu'à 1024px) */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .icon {
+    font-size: 36px;
+  }
+}
+
+/* Tablettes et petits laptops */
 @media (max-width: 768px) {
   .card-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
   }
+
   .title {
     font-size: 2rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .icon {
+    font-size: 34px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .partie5-container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+
+  .details {
+    font-size: 0.85rem;
   }
 }

@@ -66,7 +66,7 @@ const MapPage = () => {
     const emptyStars = 5 - fullStars - halfStar; // Empty stars to complete the 5-star system
 
     return (
-      <>
+      <div id="Artisans">
         {Array(fullStars).fill().map((_, index) => (
           <FaStar key={`full-${index}`} color="#FF9800" size={20} />
         ))}
@@ -74,12 +74,12 @@ const MapPage = () => {
         {Array(emptyStars).fill().map((_, index) => (
           <FaStar key={`empty-${index}`} color="#E0E0E0" size={20} />
         ))}
-      </>
+      </div>
     );
   };
 
   return (
-    <div className="map-container">
+    <div id="Artisans" className="map-container">
       {isLocationSet && (
         <div>
           {/* Filter buttons */}

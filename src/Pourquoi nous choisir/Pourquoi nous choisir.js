@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaUserCheck, FaTag, FaCog, FaLock, FaGlobe } from 'react-icons/fa';
-import './Partie5.css';
+import './Pourquoi nous choisir.css';
 
 const Partie5 = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -17,7 +17,7 @@ const Partie5 = () => {
   ];
 
   return (
-    <div className="partie5-container">
+    <div id="Pourquoi nous choisir" className="partie5-container">
       <h1 className="title">Pourquoi Nous Choisir ?</h1>
       <div className="card-container">
         {optionsTop.map((option) => (

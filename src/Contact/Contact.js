@@ -1,9 +1,9 @@
 import React from "react";
-import "./Partie8.css";
+import "./Contact.css";
 
 const ContactForm = () => {
   return (
-    <div className="form-wrapper">
+    <div id="Contact" className="form-wrapper">
       <div className="form-header">
         <h5>📩 Contactez Nous</h5>
         <h1>Besoin d'aide ?</h1>

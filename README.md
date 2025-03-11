@@ -1,4 +1,5 @@
 # HIRAFI
+ [cliquer pour voir le démo de notre projet](https://drive.google.com/file/d/1jJklZcEkylZe7OZ0CltmYOEI3jAfkLlv/view?usp=drive_link)
 
 ## Description du Projet
 HIRAFI est une solution web développée pour faciliter la gestion des services et des clients des artisans au Maroc. Cette plateforme permet aux artisans de gérer efficacement leurs activités, leurs clients et leurs services grâce à une interface intuitive et sécurisée.
